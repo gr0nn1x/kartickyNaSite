@@ -1,0 +1,343 @@
+[
+  {
+    "okruh": "Routovani",
+    "otazka": "V jakem souboru v debianu najdeme nastaveni rekurzivnich DNS serveru?",
+    "odpoved": "/etc/resolv.conf"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Kolik bitu ma celkem adresa IPv6?",
+    "odpoved": "128 bitu"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Jaky je globalni prefix linkove-lokalni adresy v IPv6?",
+    "odpoved": "fe80:: /10"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Jaky je globalni prefix multicast adresy v IPv6?",
+    "odpoved": "ff00:: /8"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "V jakem souboru v debianu zapnout funkci docasneho routovani?",
+    "odpoved": "/proc/sys/net/ipv4/ip_forward"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Co znamena direktiva auto v konfiguraci sitoveho rozhrani v Linuxu?",
+    "odpoved": "rozhrani se zapne automaticky pri startu systemu"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Co znamena direktiva allow-hotplug v konfiguraci sit. rozhrani v Linuxu?",
+    "odpoved": "rozhrani se zapne pri zapojeni sitoveho kabelu"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Co se nachazi v souboru /etc/hosts?",
+    "odpoved": "ip adresa a jmenny nazev"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Podle ceho pozname v IPv6 Nespecifikovanou adresu?",
+    "odpoved": "ma same nuly"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "O cem rozhoduje nsswitch.conf?",
+    "odpoved": "rozhoduje, co bude mit vetsi prioritu, jestli DNS nebo /etc/hosts"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Kde zapnout permanentni routovani?",
+    "odpoved": "/etc/sysctl.conf"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Jaky je rozdil mezi Ipconfig a Ifconfig?",
+    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani\nIPconfig - Windows\nIfconfig - Linux"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co znamena, ze je DHCP server autoritativni?",
+    "odpoved": "kdyz klient posle pozadavek a DHCP server ho nema v databazi, tak ho zamitne"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi DHCP Discover?",
+    "odpoved": "K navazani spojeni mezi klientem a serverem - posila klient a rika, ze v siti existuje"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Jake informace obsahuje DHCP Offer?",
+    "odpoved": "nabizena IP adresa, maska, IP serveru, MAC klienta, dobu zapujcky"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Jakym typem vysilani se posila DHCP Request?",
+    "odpoved": "broadcastem od klienta"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Kdo a kdy posila zpravu DHCP Decline?",
+    "odpoved": "klient, pokud je adresa v siti uz pouzita, tak zamita offer"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP Release?",
+    "odpoved": "Klient rika serveru, ze uz danou IP nepotrebuje a vraci ji zpatky"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP Inform?",
+    "odpoved": "Klient rika serveru, ze uz IP adresu ma, ale chce dalsi konf. informace"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP NAK?",
+    "odpoved": "Server zamita request klienta pokud pred tim neprobehla zadna komunikace a klient nemuze danou adresu dostat"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi DHCP Relay?",
+    "odpoved": "Aby klient mohl komunikovat se serverem i pres router"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jake 2 ulohy plni rekurzivni DNS server?",
+    "odpoved": "rekurzivni hledani\ndotazy uklada do cache"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jake jsou zakladni urovne systemu DNS?",
+    "odpoved": ". - korenovy server\n.cz - TLD (Top level domain)\nspsmb - Second level domain"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jaky je rozdil mezi primarnim a sekundarnim DNS serverem?",
+    "odpoved": "Primarni je ten hlavni, kdyz se s nim neco stane tak zacne fungovat sekundarni, ktery je takovy backup"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Napiste priklad A zaznamu v DNS. K cemu slouzi?",
+    "odpoved": "ns1 IN A 10.0.0.1\npreklada IP adresu na jmenny nazev"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "K cemu slouzi PTR zaznam?",
+    "odpoved": "preklada jmenny nazev zpet na IP adresu"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jaka je domena zpetne zony pro IPv4?",
+    "odpoved": "ip-addr.arpa"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jaka je domena zpetne zony pro IPv6?",
+    "odpoved": "ip6.arpa"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jaky je rozdil mezi doprednou a zpetnou zonou?",
+    "odpoved": "Dopredna- preklad IP adres na jmenne nazvy\nZpetna - naopak"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jake udaje obsahuje zaznam MX v DNS?",
+    "odpoved": "Server pro elektronickou postu\nzona IN MX priorita mail_server"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jaky je logicky pocet korenovych DNS serveru?",
+    "odpoved": "13 (A-M)"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jake udaje obsahuje zaznam SOA?",
+    "odpoved": "udava zacatek zony\n1. domena\n2. primarni ns\n3. email spravce\n4. serial\n5. refresh\n6. retry\n7. expire\n8. TTL"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Co udava NS zaznam?",
+    "odpoved": "Jaky ns je pro danou zonu autoritativni"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Co znamena, ze je DNS server autoritativni?",
+    "odpoved": "rika, jak ma domena vypadat, jake ma obsahovat informace"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Pri jake komunikaci pouziva Samba API NetBIOS",
+    "odpoved": "pri neprime komunikaci"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "V jakych rolich muze byt Samba konfigurovana?",
+    "odpoved": "Standalone server, Domain member, Domain controller"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jake jsou zakladni casti hlavniho konf. souboru Samby?",
+    "odpoved": "[global], [homes], [printers], [nazev]"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi NBNS a jak se nazyva v OS Windows?",
+    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS\nVe Windows - WINS"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "V jakem pripade pouziva Samba system DNS?",
+    "odpoved": "pokud je komunikace po siti prima (port 445)"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi v konfiguraci samby polozka create mask a directory mask",
+    "odpoved": "create mask - pristupova prava nove vytvorenych souboru\ndirectory mask-  pristupova prava nove vytvorenych slozek"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co predstavuje v konfiguraci Samby polozka security?",
+    "odpoved": "Jakym zpusobem se overuje uzivatel k Samba serveru"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Kdy pouzijeme v konfiguraci Samby polozku browseable?",
+    "odpoved": "Pokud chceme, aby slozka sla zobrazit"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jake daemony pouziva Samba?",
+    "odpoved": "smbd -  pro sdileni souboru a tiskaren\nnmbd - pro preklad jmennych nazvu na IP adresy\nwinbindd - pro spolupraci s WIN NT4"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co dela testparm?",
+    "odpoved": "Zkontroluje konf. soubor smb.conf"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Vypiste typy komunikace protokolu SMB/CIFS a priradte protokoly a porty",
+    "odpoved": "prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP\nneprima - NetBIOS API\n    - jmenna sluzba (neco jako DNS) - 137 TCP i UDP\n    - nestavove - 138 UDP\n    - stavove - 139 TCP"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Vypiste zakladni nastroje pro praci se sambou + popis",
+    "odpoved": "testparm - kontrola konf. souboru smb.conf\nsmbpasswd\n    - - a - pridani uzivatelu\n    - - x - odstraneni uzivatelu\n    - - d - zakazani uzivatelu\n    - - e - povoleni uzivatelu\npdbedit -L - vypise seznam uzivatelu samby\nsmbstatus - informace o bezici sambe\nsmbclient - prace se sdilenymi slozkami"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi v konfiguraci Samby polozka map to guest?",
+    "odpoved": "akce pri zadani spatnych prihlasovacich udaju"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jakou direktivou v Sambe priradime sdilene slozce pristup konkretnim uzivatelum?",
+    "odpoved": "valid users"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co dela prikaz root preexec v konfiguraci Samby?",
+    "odpoved": "predtim, nez se povoli pristup uzivateli se z roota spusti nami zadany prikaz"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jakymi nastavenimi lze v konfiguraci Samby omezit moznost zapisu do sdilene slozky?",
+    "odpoved": "writeable = no\nwritable = no\nread only = yes"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jak omezite v konfiguraci Samby rozhrani, na kterych Samba nasloucha klientum?",
+    "odpoved": "interfaces - napiseme konkretni rozhrani\nbind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "K cemu slouzi WMI filtery v GPO?",
+    "odpoved": "k vyfiltrovani systemovych politik"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Jaka role pouziva globalni katalog?",
+    "odpoved": "Infractructure master"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "K cemu slouzi role Operation Naming Master?",
+    "odpoved": "K pridavani a odebirani domen v lese"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Z jake role se generuje SID?",
+    "odpoved": "z RID masteru"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Jaka role ma nastarosti AD schema?",
+    "odpoved": "Schema master"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "K cemu slouzi primary domain controller emulator?",
+    "odpoved": "zajistuje kompatibilitu s historickymi systemy"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Kam se GPO ukladaji?",
+    "odpoved": "C: → Windows → SYSVOL → sysvol → domena → Policies"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Jake jsou dve zakladni politiky a co delaji?",
+    "odpoved": "Default domain policy - vychozi politika domeny - generuje se z defaultu\nDefault domain controller policy - vychozi politika, ktera se aplikuje na domenove radice - generuje se z defaultu"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Co je to PDC emulator?",
+    "odpoved": "Role, ktera zajistuje kompatibilitu s historickymi systemy"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Co znamená zkratka OU v AD ve Win Serveru? K čemu je tento objekt?",
+    "odpoved": "Organizational Unit; slouží k organizaci a seskupeni objektů a sys. politik."
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Kdy použijeme pravidla GPO pro počítač a kdy pro uživatele?",
+    "odpoved": "Pocitac - Kdyz chceme nastavit politiku vsem uzivatelum na danem PC\nUzivatele - Kdyz chceme nastavit politiku pouze na daneho uzivatele bez ohledu na to, na jakem pocitaci se prihlasi"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Z ceho se sklada fyzicka struktura v AD?",
+    "odpoved": "site, domain controller"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Z ceho se sklada logicka struktura AD?",
+    "odpoved": "Les, Stromy, OU"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "K cemu slouzi v AD SID?",
+    "odpoved": "Security ID - jedinecny identifikator pro objekty v AD"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Co to jsou GPO?",
+    "odpoved": "systemove politiky, pomoci kterych muzeme nastavit od vzhledu zarizeni (treba zmena tapety) az po kompletni nastaveni systemu"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Jak je to s dedicnosti a poradim vyhodnocovani GPO?",
+    "odpoved": "**Dědičnost GPO**: Nastavení z vyšších úrovní (Site → Domain → OU) se dědí na nižší úrovně.\n**Pořadí vyhodnocování**: priorita → cim je cislo mensi, tim vetsi je priorita"
+  },
+  {
+    "okruh": "AD a GPO",
+    "otazka": "Co je potreba pro pouzivani GPO?",
+    "odpoved": "mit nainstalovane AD"
+  }
+]
+
