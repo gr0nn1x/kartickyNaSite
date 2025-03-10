@@ -338,6 +338,136 @@
     "okruh": "AD a GPO",
     "otazka": "Co je potreba pro pouzivani GPO?",
     "odpoved": "mit nainstalovane AD"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co presne dela firewall?",
+    "odpoved": "kontroluje a filtruje síťový provoz na základě předem definovaných pravidel. Jeho hlavním účelem je chránit zařízení a sítě před neoprávněným přístupem, útoky, a škodlivým provozem. Rozhoduje, zda povolí nebo zablokuje datové pakety na základě jejich charakteristik, jako je IP adresa, port, protokol nebo obsah."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou zakladni typy firewallu, na jakych ISO/OSI vrstvach pracuji?",
+    "odpoved": "1. **nestavové firewally** (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na sitove vrstve + transportni vrstve kvuli portum. 2. **stavové firewally** (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na transportni vrstve. 3. **aplikační firewally** - systemy, ktere rozumi aplikacni vrstve. Pracuje na aplikacni vrstve."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "K cemu slouzi NAT, proc vzniknul?",
+    "odpoved": "NAT (Network Address Translation) umožňuje překlad mezi privátními a veřejnými IP adresami, což šetří veřejné IP adresy a umožňuje sdílení jedné veřejné adresy mezi více zařízeními."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou typy NATu?",
+    "odpoved": "1. **1:1** – statická konfigurace 1 veřejné IP na jednu privátní IP 2. **1:N** - mapuje více privátních IP na jednu veřejnou (NAT overload) 3. **N:N** – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake existuji typy hooku v nftables, co presne delaji?",
+    "odpoved": "1. **Prerouting** – zachytává provoz před směrováním. 2. **Input** – kontroluje provoz mířící do zařízení. 3. **Forward** – kontroluje provoz procházející skrz zařízení. 4. **Output** – kontroluje provoz odesílaný z zařízení. 5. **Postrouting** – upravuje provoz po směrování."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou typy retezcu v nftables?",
+    "odpoved": "1. **filter** - vychozi 2. **nat** - provadi natovani 3. **route** - meni smerovani paketu"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je priorita nftables, jakych muze nabyvat hodnot?",
+    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita. 1. **dstnat**: -100 2. **filter**: 0 3. **srcnat**: 100"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake akce v nftables slouzi pro povoleni a zakazani komunikace (kratky popis)?",
+    "odpoved": "**accept** – povoleni komunikace, **drop** – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), **reject** – podobné jako drop, vrací zpět chybovou zprávu"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jaky je rozdil mezi akci jump a goto v nftables?",
+    "odpoved": "**Jump** – přechází do jiného řetězce a po dokončení pokračuje zpět. **Goto** – přechází do jiného řetězce bez návratu zpet."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Lze v nftables presmerovat komunikaci na jiny port? Jak?",
+    "odpoved": "Ano, pomocí akce **dnat**: `dnat to :<nový_port>`"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky typ sluzby dle postaveni uzlu poskytuje HTTP?",
+    "odpoved": "Komunikace klient → Server"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jak se v HTTP uchovava stav stranky pri rechodu mezi strankami?",
+    "odpoved": "Cookies, Session storage, Local storage"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake jsou verze HTTP protokolu?",
+    "odpoved": "**0.9**, **1.0**, **1.1**, **2.0**, **3.0**"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake protokoly nizsi vrstvy pouzivaji jednotlive verze HTTP?",
+    "odpoved": "HTTP/0.9,1.0,1.1 - TCP - data prenasi jako text - MIME, HTTP/2.0 - TCP - data prenasi binarne - rychlejsi, HTTP/3.0 - podpora UDP pomoci QUIC"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jakym zpusobem prenasi data jednotlive verze HTTP?",
+    "odpoved": "HTTP/1 - data prenasi jako text - MIME (TCP), HTTP/2 - data prenasi binarne (TCP), HTTP/3 - data prenasi binarne pomoci QUIC (UDP nadstavba)"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi SSL a TLS?",
+    "odpoved": "SSL - starsi, ne tolik zabezpecene sifrovani, nepouziva se. TLS - novejsi, pouziva se, bezpecnejsi sifrovani"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Z jakych casti se sklada URL?",
+    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj\n| | | | |\nmetoda adresa port dokument query_string"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Vypiste stavove kody HTTP",
+    "odpoved": "1xx - info, 2xx - uspech, 3xx - redirect, 4xx - chyba klienta, 5xx - chyba serveru"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Popiste metody HTTP pro ziskavani a odesilani dat na server",
+    "odpoved": "**GET** - klient posle GET na server pro ziskani dat, **POST** - klient posle POST na server pro odeslani dat, **HEAD** - ziskava info z hlavicky"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jakou HTTP metodou zjistite podporovane HTTP metody?",
+    "odpoved": "**OPTIONS**"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Co je trasovani, jakou pouziva metodu HTTP?",
+    "odpoved": "vraci kopii req pozadavku, pro developery, **TRACE**"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake soubory je potreba upravit v apache2 pro provoz http a https stranek?",
+    "odpoved": "Pro HTTP: `apache2.conf`, `security.conf`, `000-default.conf`. Pro HTTPS: `default-ssl.conf`, `ssl.conf`"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi slozkami conf, mods a sites v apache2?",
+    "odpoved": "**conf** - hlavni konfiguracni soubory - globalni nastaveni, **mods** - nastaveni pro moduly (**mod**ule**s**), **sites** - nastaveni pro jednotlive weby"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co je nastaveni Default document v IIS?",
+    "odpoved": "Kdyz uzivatel vyhleda např. `www.example.com/`, tak je to soubor, ktery se defaultne na teto adrese nacte. Typicky je to soubor jako `index.html`, `default.aspx` nebo `index.php`."
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co dela funkce IP and Domain Restrictions v IIS",
+    "odpoved": "povolení nebo zablokování přístupu k webové aplikaci na základě IP adres nebo domén"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "K cemu slouzi v IIS bindings?",
+    "odpoved": "prirazuje webovou aplikaci na spravy **port, IP adresu a protokol** (HTTP nebo HTTPS)"
   }
 ]
 
