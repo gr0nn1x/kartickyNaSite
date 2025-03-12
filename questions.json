@@ -347,7 +347,7 @@
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou zakladni typy firewallu, na jakych ISO/OSI vrstvach pracuji?",
-    "odpoved": "1. **nestavové firewally** (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na sitove vrstve + transportni vrstve kvuli portum. 2. **stavové firewally** (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na transportni vrstve. 3. **aplikační firewally** - systemy, ktere rozumi aplikacni vrstve. Pracuje na aplikacni vrstve."
+    "odpoved": "1. <b>nestavové firewally</b> (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na sitove vrstve + transportni vrstve kvuli portum. 2. <b>stavové firewally</b> (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na transportni vrstve. 3. <b>aplikační firewally</b> - systemy, ktere rozumi aplikacni vrstve. Pracuje na aplikacni vrstve."
   },
   {
     "okruh": "Firewall",
@@ -357,37 +357,37 @@
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou typy NATu?",
-    "odpoved": "1. **1:1** – statická konfigurace 1 veřejné IP na jednu privátní IP 2. **1:N** - mapuje více privátních IP na jednu veřejnou (NAT overload) 3. **N:N** – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
+    "odpoved": "1. <b>1:1</b> – statická konfigurace 1 veřejné IP na jednu privátní IP 2. <b>1:N</b> - mapuje více privátních IP na jednu veřejnou (NAT overload) 3. <b>N:N</b> – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake existuji typy hooku v nftables, co presne delaji?",
-    "odpoved": "1. **Prerouting** – zachytává provoz před směrováním. 2. **Input** – kontroluje provoz mířící do zařízení. 3. **Forward** – kontroluje provoz procházející skrz zařízení. 4. **Output** – kontroluje provoz odesílaný z zařízení. 5. **Postrouting** – upravuje provoz po směrování."
+    "odpoved": "1. <b>Prerouting</b> – zachytává provoz před směrováním. 2. <b>Input</b> – kontroluje provoz mířící do zařízení. 3. <b>Forward</b> – kontroluje provoz procházející skrz zařízení. 4. <b>Output</b> – kontroluje provoz odesílaný z zařízení. 5. <b>Postrouting</b> – upravuje provoz po směrování."
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou typy retezcu v nftables?",
-    "odpoved": "1. **filter** - vychozi 2. **nat** - provadi natovani 3. **route** - meni smerovani paketu"
+    "odpoved": "1. <b>filter</b> - vychozi 2. <b>nat</b> - provadi natovani 3. <b>route</b> - meni smerovani paketu"
   },
   {
     "okruh": "Firewall",
     "otazka": "Co je priorita nftables, jakych muze nabyvat hodnot?",
-    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita. 1. **dstnat**: -100 2. **filter**: 0 3. **srcnat**: 100"
+    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita. 1. <b>dstnat</b>: -100 2. <b>filter</b>: 0 3. <b>srcnat</b>: 100"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake akce v nftables slouzi pro povoleni a zakazani komunikace (kratky popis)?",
-    "odpoved": "**accept** – povoleni komunikace, **drop** – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), **reject** – podobné jako drop, vrací zpět chybovou zprávu"
+    "odpoved": "<b>accept</b> – povoleni komunikace, <b>drop</b> – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), <b>reject</b> – podobné jako drop, vrací zpět chybovou zprávu"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jaky je rozdil mezi akci jump a goto v nftables?",
-    "odpoved": "**Jump** – přechází do jiného řetězce a po dokončení pokračuje zpět. **Goto** – přechází do jiného řetězce bez návratu zpet."
+    "odpoved": "<b>Jump</b> – přechází do jiného řetězce a po dokončení pokračuje zpět. <b>Goto</b> – přechází do jiného řetězce bez návratu zpet."
   },
   {
     "okruh": "Firewall",
     "otazka": "Lze v nftables presmerovat komunikaci na jiny port? Jak?",
-    "odpoved": "Ano, pomocí akce **dnat**: `dnat to :<nový_port>`"
+    "odpoved": "Ano, pomocí akce <b>dnat</b>: `dnat to :<nový_port>`"
   },
   {
     "okruh": "Apache",
@@ -402,7 +402,7 @@
   {
     "okruh": "Apache",
     "otazka": "Jake jsou verze HTTP protokolu?",
-    "odpoved": "**0.9**, **1.0**, **1.1**, **2.0**, **3.0**"
+    "odpoved": "<b>0.9</b>, <b>1.0</b>, <b>1.1</b>, <b>2.0</b>, <b>3.0</b>"
   },
   {
     "okruh": "Apache",
@@ -432,17 +432,17 @@
   {
     "okruh": "Apache",
     "otazka": "Popiste metody HTTP pro ziskavani a odesilani dat na server",
-    "odpoved": "**GET** - klient posle GET na server pro ziskani dat, **POST** - klient posle POST na server pro odeslani dat, **HEAD** - ziskava info z hlavicky"
+    "odpoved": "<b>GET</b> - klient posle GET na server pro ziskani dat, <b>POST</b> - klient posle POST na server pro odeslani dat, <b>HEAD</b> - ziskava info z hlavicky"
   },
   {
     "okruh": "Apache",
     "otazka": "Jakou HTTP metodou zjistite podporovane HTTP metody?",
-    "odpoved": "**OPTIONS**"
+    "odpoved": "<b>OPTIONS</b>"
   },
   {
     "okruh": "Apache",
     "otazka": "Co je trasovani, jakou pouziva metodu HTTP?",
-    "odpoved": "vraci kopii req pozadavku, pro developery, **TRACE**"
+    "odpoved": "vraci kopii req pozadavku, pro developery, <b>TRACE</b>"
   },
   {
     "okruh": "Apache",
@@ -452,7 +452,7 @@
   {
     "okruh": "Apache",
     "otazka": "Jaky je rozdil mezi slozkami conf, mods a sites v apache2?",
-    "odpoved": "**conf** - hlavni konfiguracni soubory - globalni nastaveni, **mods** - nastaveni pro moduly (**mod**ule**s**), **sites** - nastaveni pro jednotlive weby"
+    "odpoved": "<b>conf</b> - hlavni konfiguracni soubory - globalni nastaveni, <b>mods</b> - nastaveni pro moduly (<b>mod</b>ule<b>s</b>), <b>sites</b> - nastaveni pro jednotlive weby"
   },
   {
     "okruh": "IIS",
@@ -467,7 +467,7 @@
   {
     "okruh": "IIS",
     "otazka": "K cemu slouzi v IIS bindings?",
-    "odpoved": "prirazuje webovou aplikaci na spravy **port, IP adresu a protokol** (HTTP nebo HTTPS)"
+    "odpoved": "prirazuje webovou aplikaci na spravy <b>port, IP adresu a protokol</b> (HTTP nebo HTTPS)"
   }
 ]
 
