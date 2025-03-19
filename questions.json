@@ -170,6 +170,61 @@
     "odpoved": "rika, jak ma domena vypadat, jake ma obsahovat informace"
   },
   {
+    "okruh": "Windows Server",
+    "otazka": "Jaké jsou možnosti ovládání Windows Serveru?",
+    "odpoved": "GUI, Textový režim (PowerShell, cmd, vbscript, sconfig), Remote (RSAT - Remote Server Administration Toolkit)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co musíme zvážit před pořízením a instalací Windows Serveru?",
+    "odpoved": "Kolik mám peněz (je placený), Jaký mám HW (náročnost závisí na GUI nebo text), Počet uživatelů v síti, Potřebné funkcionality serveru (výběr edice)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to jádro (kernel) systému?",
+    "odpoved": "Načítá se jako první do paměti, přebírá kontrolu nad HW, řídí přístup k CPU, obsahuje ovladače a zajišťuje komunikaci mezi hardwarem a softwarem"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to HAL?",
+    "odpoved": "Hardware Abstraction Layer - abstraktní vrstva mezi jádrem a HW, umožňuje kompatibilitu softwaru napříč různými verzemi HW"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jakou zásadní výhodu přináší použití HAL?",
+    "odpoved": "Umožňuje Windows Serveru běžet na různých typech HW"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaké edice nabízí Windows Server?",
+    "odpoved": "Essentials, Standard, Datacenter"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to CAL?",
+    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaké typy CAL lze použít s Windows Server?",
+    "odpoved": "User CAL - licence na uživatele, Device CAL - licence na zařízení"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaký je rozdíl mezi rolí, službou a funkcí Windows Serveru?",
+    "odpoved": "Funkce - rozšiřující část role, Role - základní funkcionalita (např. DNS, DHCP), Služba - procesy běžící na pozadí (v Linuxu daemoni)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co to jsou služby ve Windows Serveru?",
+    "odpoved": "Procesy běžící na pozadí (v Linuxu daemoni)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to Windows Server a k čemu slouží?",
+    "odpoved": "Operační systém od Microsoftu, slouží k provozování síťových služeb (DHCP, DNS, AD, GPO, webserver, Exchange server, atd.)"
+  },
+  {
     "okruh": "Samba",
     "otazka": "Pri jake komunikaci pouziva Samba API NetBIOS",
     "odpoved": "pri neprime komunikaci"
@@ -255,89 +310,99 @@
     "odpoved": "interfaces - napiseme konkretni rozhrani\nbind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "K cemu slouzi WMI filtery v GPO?",
-    "odpoved": "k vyfiltrovani systemovych politik"
+    "okruh": "AD",
+    "otazka": "Jaká role používá globální katalog?",
+    "odpoved": "Infrastructure master"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Jaka role pouziva globalni katalog?",
-    "odpoved": "Infractructure master"
+    "okruh": "AD",
+    "otazka": "K čemu slouží role Operation Naming Master?",
+    "odpoved": "K přidávání a odebírání domén v lese"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "K cemu slouzi role Operation Naming Master?",
-    "odpoved": "K pridavani a odebirani domen v lese"
+    "okruh": "AD",
+    "otazka": "Z jaké role se generuje SID?",
+    "odpoved": "Z RID masteru"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Z jake role se generuje SID?",
-    "odpoved": "z RID masteru"
-  },
-  {
-    "okruh": "AD a GPO",
-    "otazka": "Jaka role ma nastarosti AD schema?",
+    "okruh": "AD",
+    "otazka": "Jaká role má na starosti AD schéma?",
     "odpoved": "Schema master"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "K cemu slouzi primary domain controller emulator?",
-    "odpoved": "zajistuje kompatibilitu s historickymi systemy"
+    "okruh": "AD",
+    "otazka": "K čemu slouží primary domain controller emulator?",
+    "odpoved": "Zajišťuje kompatibilitu s historickými systémy"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Kam se GPO ukladaji?",
-    "odpoved": "C: → Windows → SYSVOL → sysvol → domena → Policies"
+    "okruh": "AD",
+    "otazka": "Co znamená zkratka OU v AD ve Windows Serveru? K čemu je tento objekt?",
+    "odpoved": "Organizational Unit; slouží k organizaci a seskupení objektů a systémových politik"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Jake jsou dve zakladni politiky a co delaji?",
-    "odpoved": "Default domain policy - vychozi politika domeny - generuje se z defaultu\nDefault domain controller policy - vychozi politika, ktera se aplikuje na domenove radice - generuje se z defaultu"
+    "okruh": "AD",
+    "otazka": "Z čeho se skládá fyzická struktura v AD?",
+    "odpoved": "Sítě, domain controllery"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Co je to PDC emulator?",
-    "odpoved": "Role, ktera zajistuje kompatibilitu s historickymi systemy"
-  },
-  {
-    "okruh": "AD a GPO",
-    "otazka": "Co znamená zkratka OU v AD ve Win Serveru? K čemu je tento objekt?",
-    "odpoved": "Organizational Unit; slouží k organizaci a seskupeni objektů a sys. politik."
-  },
-  {
-    "okruh": "AD a GPO",
-    "otazka": "Kdy použijeme pravidla GPO pro počítač a kdy pro uživatele?",
-    "odpoved": "Pocitac - Kdyz chceme nastavit politiku vsem uzivatelum na danem PC\nUzivatele - Kdyz chceme nastavit politiku pouze na daneho uzivatele bez ohledu na to, na jakem pocitaci se prihlasi"
-  },
-  {
-    "okruh": "AD a GPO",
-    "otazka": "Z ceho se sklada fyzicka struktura v AD?",
-    "odpoved": "site, domain controller"
-  },
-  {
-    "okruh": "AD a GPO",
-    "otazka": "Z ceho se sklada logicka struktura AD?",
+    "okruh": "AD",
+    "otazka": "Z čeho se skládá logická struktura AD?",
     "odpoved": "Les, Stromy, OU"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "K cemu slouzi v AD SID?",
-    "odpoved": "Security ID - jedinecny identifikator pro objekty v AD"
+    "okruh": "AD",
+    "otazka": "K čemu slouží v AD SID?",
+    "odpoved": "Security ID - jedinečný identifikátor pro objekty v AD"
   },
   {
-    "okruh": "AD a GPO",
+    "okruh": "GPO",
+    "otazka": "K čemu slouží WMI filtry v GPO?",
+    "odpoved": "K vyfiltrování systémových politik"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Kam se GPO ukládají?",
+    "odpoved": "C:\\Windows\\SYSVOL\\sysvol\\domena\\Policies"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jaké jsou dvě základní politiky a co dělají?",
+    "odpoved": "Default domain policy - výchozí politika domény, Default domain controller policy - výchozí politika pro doménové řadiče"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Kdy použijeme pravidla GPO pro počítač a kdy pro uživatele?",
+    "odpoved": "Pro počítač - aplikace na všechny uživatele PC, Pro uživatele - aplikace na konkrétního uživatele nezávisle na PC"
+  },
+  {
+    "okruh": "GPO",
     "otazka": "Co to jsou GPO?",
-    "odpoved": "systemove politiky, pomoci kterych muzeme nastavit od vzhledu zarizeni (treba zmena tapety) az po kompletni nastaveni systemu"
+    "odpoved": "Systémové politiky pro nastavení vzhledu zařízení až po kompletní nastavení systému"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Jak je to s dedicnosti a poradim vyhodnocovani GPO?",
-    "odpoved": "**Dědičnost GPO**: Nastavení z vyšších úrovní (Site → Domain → OU) se dědí na nižší úrovně.\n**Pořadí vyhodnocování**: priorita → cim je cislo mensi, tim vetsi je priorita"
+    "okruh": "GPO",
+    "otazka": "Jak je to s dědičností a pořadím vyhodnocování GPO?",
+    "odpoved": "Dědičnost: Nastavení z vyšších úrovní se dědí na nižší. Pořadí: Priorita podle čísel, menší číslo má větší prioritu"
   },
   {
-    "okruh": "AD a GPO",
-    "otazka": "Co je potreba pro pouzivani GPO?",
-    "odpoved": "mit nainstalovane AD"
+    "okruh": "GPO",
+    "otazka": "Co je potřeba pro používání GPO?",
+    "odpoved": "AD, DNS, Windows Server"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Na jaké objekty se mohou GPO vázat?",
+    "odpoved": "Site, Domain, Domain Controller, OU"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jaký je rozdíl mezi nástrojem Group Policy Modeling a Group Policy Results?",
+    "odpoved": "Group Policy Modeling - simulace politik, Group Policy Results - zjištění aktuálního stavu politik"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "K čemu slouží starter GPO?",
+    "odpoved": "Šablona pro systémové politiky"
   },
   {
     "okruh": "Firewall",
