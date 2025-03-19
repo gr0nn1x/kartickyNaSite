@@ -533,6 +533,56 @@
     "okruh": "IIS",
     "otazka": "K cemu slouzi v IIS bindings?",
     "odpoved": "prirazuje webovou aplikaci na spravy <b>port, IP adresu a protokol</b> (HTTP nebo HTTPS)"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jake porty a k cemu se pouziva SMTP protokol?",
+    "odpoved": "25 - externí, nešifrovaný; 465 - externí, šifrovaný; 587 - interní, šifrovaný"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MDA?",
+    "odpoved": "Mail Delivery Agent - zajišťuje, aby zpráva byla doručena do e-mailové schránky uživatele"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MUA?",
+    "odpoved": "Mail User Agent - umožňuje uživateli dostat se do schránky"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MSA?",
+    "odpoved": "Mail Submission Agent - stará se o doručení zprávy od odesílatele k příjemci"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Vypište základní protokoly a porty pro přístup k e-mailové schránce",
+    "odpoved": "POP3: 110 - nešifrovaný, 995 - šifrovaný; IMAP4: 143 - nešifrovaný, 993 - šifrovaný"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Popište rozdíl mezi dvěma základními protokoly pro přístup k e-mailové schránce",
+    "odpoved": "POP3 - stahuje celý e-mail, pokud nastala chyba, stahuje znovu; IMAP4 - stáhne pouze hlavičky, samotný e-mail si stáhne, až když ho uživatel otevře"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jaký je rozdíl mezi režimem internet a smarthost v Exim4?",
+    "odpoved": "Internet - odesílá e-maily přes internet; Smarthost - odesílá e-maily přes SMTP relay (přes jiný SMTP server)"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Který balíček zajišťuje podporu pro přístup k poštovní schránce?",
+    "odpoved": "Dovecot"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jak se v SMTP přenáší obrázky?",
+    "odpoved": "Přes MIME"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to Open Relay a jaká jsou rizika?",
+    "odpoved": "Open Relay umožňuje komukoliv odkudkoliv posílat e-maily bez ověření; spameři ho často využívají"
   }
 ]
 
