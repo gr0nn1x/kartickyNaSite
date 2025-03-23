@@ -170,6 +170,26 @@
     "odpoved": "rika, jak ma domena vypadat, jake ma obsahovat informace"
   },
   {
+    "okruh": "DNS",
+    "otazka": "Jake servery jsou v DNS pojmenovany pismeny abecedy? Jaka pismena se pouzivaji?",
+    "odpoved": "korenove (root) - A-M"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jak funguje v DNS rekuzivni vyhledavani?",
+    "odpoved": "vyhledavani uklada do cache → pri dalsim vyhledavani to bude rychlejsi"
+  },
+  {
+    "okruh": "DNS",
+    "otazka": "Jakym nastrojem ve Windows overime funkcnost DNS serveru?",
+    "odpoved": "nslookup"
+  },
+  {
+  "okruh": "DNS",
+  "otazka": "Jake protokoly nizsi vrstvy a proc pouziva DNS server?",
+  "odpoved": "- UDP (User Datagram Protocol) – Používá se pro většinu DNS dotazů, protože je rychlý a nevyžaduje navázání spojení. DNS dotazy jsou obvykle malé a UDP je efektivní pro přenos těchto informací.\n- TCP (Transmission Control Protocol) – Používá se v případě, že odpověď na DNS dotaz je příliš velká pro UDP (například při přenosu zónových souborů nebo při přetížení serveru). TCP zajišťuje spolehlivost a zaručuje doručení dat."
+  },
+  {
     "okruh": "Windows Server",
     "otazka": "Jaké jsou možnosti ovládání Windows Serveru?",
     "odpoved": "GUI, Textový režim (PowerShell, cmd, vbscript, sconfig), Remote (RSAT - Remote Server Administration Toolkit)"
@@ -310,6 +330,11 @@
     "odpoved": "interfaces - napiseme konkretni rozhrani\nbind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
   },
   {
+    "okruh": "Samba",
+    "otazka": "Jak pridame do Samby, ktera neni v domene noveho uzivatele?",
+    "odpoved": "useradd -s /bin/nologin -U test -G users\n- passwd test\n- smbpasswd -a test\n- smbpasswd -e test"
+  },
+  {
     "okruh": "AD",
     "otazka": "Jaká role používá globální katalog?",
     "odpoved": "Infrastructure master"
@@ -427,7 +452,7 @@
   {
     "okruh": "Firewall",
     "otazka": "Jake existuji typy hooku v nftables, co presne delaji?",
-    "odpoved": "1. <b>Prerouting</b> – zachytává provoz před směrováním. 2. <b>Input</b> – kontroluje provoz mířící do zařízení. 3. <b>Forward</b> – kontroluje provoz procházející skrz zařízení. 4. <b>Output</b> – kontroluje provoz odesílaný z zařízení. 5. <b>Postrouting</b> – upravuje provoz po směrování."
+    "odpoved": "1. Prerouting – prichozi nat (internet → vnitrni sit)\n2. Postrouting – odchozi nat (vnitrni sit → internet)\n3. Input – prichozi komunikace\n4. Output – odchozi komunikace\n5. Forward – pruchozi komunikace"
   },
   {
     "okruh": "Firewall",
@@ -453,6 +478,26 @@
     "okruh": "Firewall",
     "otazka": "Lze v nftables presmerovat komunikaci na jiny port? Jak?",
     "odpoved": "Ano, pomocí akce <b>dnat</b>: `dnat to :<nový_port>`"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jaka je struktura nftables (casti, pres ktere prochazi komunikace)?",
+    "odpoved": "Tabluky → Retezce → Hooky → Pravidla"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou direktivy pro zdrojove a cilove porty a IP adresy v nftables?",
+    "odpoved": "sport, dport\n- saddr, daddr"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou akce pro NAT v nftables?",
+    "odpoved": "dnat to [adresa:port] - urcuje, na jakou interni adresu v LAN ma byt paket smerovan\n- snat to [adresa:port] - v paketu opoustejicim LAN meni interni IP za verejnou IP\n- masquerade - jako snat ale pri pouziti s DHCP"
+  },
+  {
+  "okruh": "Firewall",
+  "otazka": "Co presne dela proxy server?",
+  "odpoved": "Slouzi jako zprostredkovatel komunikace mezi interni siti a vnejsi siti v kontextu firewallu\n- Jinak slouzi jako prostrednik (middleman) mezi klientem a cilovym serverem"
   },
   {
     "okruh": "Apache",
@@ -520,6 +565,16 @@
     "odpoved": "<b>conf</b> - hlavni konfiguracni soubory - globalni nastaveni, <b>mods</b> - nastaveni pro moduly (<b>mod</b>ule<b>s</b>), <b>sites</b> - nastaveni pro jednotlive weby"
   },
   {
+    "okruh": "Apache",
+    "otazka": "Vypiste metody HTTP",
+    "odpoved": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD, TRACE, CONNECT"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi slozkami oznacenymi jako available a enabled?",
+    "odpoved": "available - obsahuje dostupnou konfiguraci, ale nemusi byt aktivni\n enabled - obsahuje aktivni konfiguraci"
+  },
+  {
     "okruh": "IIS",
     "otazka": "Co je nastaveni Default document v IIS?",
     "odpoved": "Kdyz uzivatel vyhleda např. `www.example.com/`, tak je to soubor, ktery se defaultne na teto adrese nacte. Typicky je to soubor jako `index.html`, `default.aspx` nebo `index.php`."
@@ -583,6 +638,71 @@
     "okruh": "Exim4",
     "otazka": "Co je to Open Relay a jaká jsou rizika?",
     "odpoved": "Open Relay umožňuje komukoliv odkudkoliv posílat e-maily bez ověření; spameři ho často využívají"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to SMTP Relay?",
+    "odpoved": "funkce pro predavani posty k dalsimu SMTP serveru - bezpecnejsi"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "V jakem formatu se pres SMTP protokol prenasi data?",
+    "odpoved": "format hlavicky a data\n obrazky pres MIME"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to smarthost?",
+    "odpoved": "email se neposila primo pres internet, ale pres SMTP relay\n vetsi zabezpeceni, preposila se mezi SMTP servery"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je to Exchange server?",
+    "odpoved": "Role od microsoftu, ktera slouzi pro spravu a provoz groupwarovych sluzeb"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co to jsou groupwarove sluzby? Vyjmenujte!",
+    "odpoved": "usnadnuji tymovou spolupraci a komunikaci\n Posilani emailu, Kalendare, Ukoly, Verejne slozky, UM"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je nastroj Unified Messaging?",
+    "odpoved": "spojuje ruzne typy komunikace do jedne platformy"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je to MTA?",
+    "odpoved": "Mail Transfer Agent - stara se o komunikaci mezi SMTP servery"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je to MSA?",
+    "odpoved": "Mail Submission Agent - prebirá zpravy od odesílatele (MUA) a predává je MTA pro doručení k prijemci"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jake MUA muzeme pouzit s Exchange serverem?",
+    "odpoved": "Outlook, Outlook Web Access - OWA, Thunderbird"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaky format databaze pouziva Exchange server?",
+    "odpoved": "EDB (Exchange Database)"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi room nebo equipment mailbox v MS Exchange?",
+    "odpoved": "Room mailbox - k rezervaci a správě místností (např. konferenčních místností, skolicich místnosti) v organizaci.\nEquipment mailbox - k rezervaci a správě vybavení (např. projektorů, laptopů) pro schůzky nebo události."
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi shared mailbox v MS Exchange?",
+    "odpoved": "aby vice uzivatelu melo pristup do jedne mailove schranky"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaky je rozdil mezi Send As a Send on Behalf v MS Exchange?",
+    "odpoved": "Send As umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli.\nSend on Behalf umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
   }
 ]
 
