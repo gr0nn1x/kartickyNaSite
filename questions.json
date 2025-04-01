@@ -817,7 +817,7 @@
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Jak funguje asymetricka sifra?",
-    "odpoved": "odesilatel a prijemce si vymeni verejne klice, odesilatel zpravu zasifruje pomoci sveho private klice, posle ji prijemci a ten si zpravu desifruje pomoci odesilatelova verejneho klice"
+    "odpoved": "odesilatel a prijemce si vymeni verejne klice, odesilatel zpravu zasifruje pomoci verejneho klice prijemce, posle ji prijemci a ten si zpravu desifruje pomoci sveho privatniho klice"
   },
   {
     "okruh": "Zabezpecena Komunikace",
