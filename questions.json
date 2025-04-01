@@ -105,6 +105,41 @@
     "odpoved": "Aby klient mohl komunikovat se serverem i pres router"
   },
   {
+    "okruh": "DHCP",
+    "otazka": "V jakém časovém okamžiku žádá klient obvykle o obnovu IP adresy?",
+    "odpoved": "V polovině doby zapůjčky"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Jaký je rozdíl mezi DHCPACK a DHCPNAK?",
+    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info.\nDHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "V jakém případě potřebujeme službu DHCP Relay?",
+    "odpoved": "Když budeme chtít komunikovat s DHCP serverem, který je v jiném subnetu přes router."
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co je to obor adres (scope), jaké obsahuje informace?",
+    "odpoved": "Scope je část v konfiguračním souboru, kde se nachází hlavní údaje jako:\n- pool (rozsah IP adres)\n- maska\n- gateway\n- doména\n- DNS servery"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží Multicast scope?",
+    "odpoved": "Je to scope, ale pro multicastové adresy."
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží superscope?",
+    "odpoved": "Superscope obsahuje více scopů.\nPoužívá se když máme více rozhraní a na každém se přidělují jiné IP.\nPak potřebujeme více scopů = superscope."
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží v DHCP rezervace IP adresy, výjimky a filtry?",
+    "odpoved": "Rezervace - přidělí zařízení konkrétní IP adresu na konkrétní MAC adresu.\nVýjimky - blokují určité IP v rozsahu poolu, aby je nepřiděloval.\nFiltry - povolují/omezují přístup k DHCP přes MAC adresy."
+  },
+  {
     "okruh": "DNS",
     "otazka": "Jake 2 ulohy plni rekurzivni DNS server?",
     "odpoved": "rekurzivni hledani\ndotazy uklada do cache"
@@ -119,15 +154,15 @@
     "otazka": "Jaky je rozdil mezi primarnim a sekundarnim DNS serverem?",
     "odpoved": "Primarni je ten hlavni, kdyz se s nim neco stane tak zacne fungovat sekundarni, ktery je takovy backup"
   },
-  {
+   {
     "okruh": "DNS",
-    "otazka": "Napiste priklad A zaznamu v DNS. K cemu slouzi?",
-    "odpoved": "ns1 IN A 10.0.0.1\npreklada IP adresu na jmenny nazev"
+    "otazka": "Napište příklad A záznamu v DNS. K čemu slouží?",
+    "odpoved": "Příklad:\nns1 IN A 10.0.0.1\n\nSlouží k překladu jmenného názvu na IP adresu."
   },
   {
     "okruh": "DNS",
-    "otazka": "K cemu slouzi PTR zaznam?",
-    "odpoved": "preklada jmenny nazev zpet na IP adresu"
+    "otazka": "K čemu slouží PTR záznam?",
+    "odpoved": "Překládá IP adresu zpět na jmenný název."
   },
   {
     "okruh": "DNS",
@@ -141,8 +176,8 @@
   },
   {
     "okruh": "DNS",
-    "otazka": "Jaky je rozdil mezi doprednou a zpetnou zonou?",
-    "odpoved": "Dopredna- preklad IP adres na jmenne nazvy\nZpetna - naopak"
+    "otazka": "Jaký je rozdíl mezi dopřednou a zpětnou zónou?",
+    "odpoved": "Dopředná zóna:\n- překládá jmenné názvy na IP adresy\n\nZpětná zóna:\n- překládá IP adresy na jmenné názvy"
   },
   {
     "okruh": "DNS",
@@ -380,6 +415,16 @@
     "odpoved": "Security ID - jedinečný identifikátor pro objekty v AD"
   },
   {
+    "okruh": "AD",
+    "otazka": "K čemu slouží AD ve Win Serveru? (4 možnosti)",
+    "odpoved": "1. Správa uživatelů, skupin a zařízení\n2. Seskupování objektů\n3. Nasazení GPO\n4. K autentizaci a autorizaci"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Na čem je AD závislé (bez čeho nejde provozovat)?",
+    "odpoved": "- Windows Server\n- Domain Controller\n- DNS\n- Kerberos"
+  },
+  {
     "okruh": "GPO",
     "otazka": "K čemu slouží WMI filtry v GPO?",
     "odpoved": "K vyfiltrování systémových politik"
@@ -428,6 +473,11 @@
     "okruh": "GPO",
     "otazka": "K čemu slouží starter GPO?",
     "odpoved": "Šablona pro systémové politiky"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jak omezíte použití GPO pouze na konkrétní uživatele a PC uvnitř objektu?",
+    "odpoved": "Pomoci:\n1. WMI filtru - filtrování podle hardwarových/softwarových charakteristik\n2. Security filtru - filtrování podle uživatelských/počítačových skupin AD"
   },
   {
     "okruh": "Firewall",
@@ -498,6 +548,21 @@
   "okruh": "Firewall",
   "otazka": "Co presne dela proxy server?",
   "odpoved": "Slouzi jako zprostredkovatel komunikace mezi interni siti a vnejsi siti v kontextu firewallu\n- Jinak slouzi jako prostrednik (middleman) mezi klientem a cilovym serverem"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to politika v nftables, jakých může nabývat hodnot?",
+    "odpoved": "- Politika určuje výchozí akci pro pakety, které neodpovídají žádnuto pravidlu\n- Možné hodnoty:\n  * accept - povolí komunikaci\n  * drop - zamítne komunikaci"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jakou direktivou se sleduje stav spojení v nftables?",
+    "odpoved": "ct state"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to hook v nftables?",
+    "odpoved": "Hooky slouží k:\n- zachycení síťové komunikace a následnému zpracování pomocí pravidel"
   },
   {
     "okruh": "Apache",
@@ -590,6 +655,16 @@
     "odpoved": "prirazuje webovou aplikaci na spravy <b>port, IP adresu a protokol</b> (HTTP nebo HTTPS)"
   },
   {
+    "okruh": "IIS",
+    "otazka": "Jaká je nativní technologie pro dynamické stránky v IIS?",
+    "odpoved": "ASP.NET"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co dělá funkce directory browsing v IIS?",
+    "odpoved": "Umožňuje prohlížet složky na webu"
+  },
+  {
     "okruh": "Exim4",
     "otazka": "Jake porty a k cemu se pouziva SMTP protokol?",
     "odpoved": "25 - externí, nešifrovaný; 465 - externí, šifrovaný; 587 - interní, šifrovaný"
@@ -621,8 +696,8 @@
   },
   {
     "okruh": "Exim4",
-    "otazka": "Jaký je rozdíl mezi režimem internet a smarthost v Exim4?",
-    "odpoved": "Internet - odesílá e-maily přes internet; Smarthost - odesílá e-maily přes SMTP relay (přes jiný SMTP server)"
+    "otazka": "Jaký je rozdíl mezi režimem internet a smarthost v exim4?",
+    "odpoved": "internet:\n- doručuje emaily přes SMTP přímo na cílový server\n\nsmarthost:\n- odesílání přes SMTP relay"
   },
   {
     "okruh": "Exim4",
@@ -646,8 +721,8 @@
   },
   {
     "okruh": "Exim4",
-    "otazka": "V jakem formatu se pres SMTP protokol prenasi data?",
-    "odpoved": "format hlavicky a data\n obrazky pres MIME"
+    "otazka": "V jakém formátu se přes SMTP protokol přenáší data?",
+    "odpoved": "Přes text a obrázky pomocí MIME"
   },
   {
     "okruh": "Exim4",
@@ -686,8 +761,8 @@
   },
   {
     "okruh": "Exchange",
-    "otazka": "Jaky format databaze pouziva Exchange server?",
-    "odpoved": "EDB (Exchange Database)"
+    "otazka": "Jaký formát databáze používá Exchange server?",
+    "odpoved": "Tranzitní SQL"
   },
   {
     "okruh": "Exchange",
@@ -703,6 +778,131 @@
     "okruh": "Exchange",
     "otazka": "Jaky je rozdil mezi Send As a Send on Behalf v MS Exchange?",
     "odpoved": "Send As umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli.\nSend on Behalf umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je potřeba k instalaci Exchange serveru?",
+    "odpoved": "Win server, AD, DNS, IIS"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaké komunikační protokoly používá Exchange server?",
+    "odpoved": "SMTP, IMAP4, POP3, MAPI"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K čemu slouží Mailbox role v Exchange serveru?",
+    "odpoved": "ke správě emailových schránek klientů"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K čemu slouží Client Access Role v Exchange serveru?",
+    "odpoved": "k přístupu klientů k MS Exchange"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Popište limity velikosti poštovní schránky.",
+    "odpoved": "Warning limit – Upozornění, že schránka se blíží k limitu.\nProhibit send limit – Uživatel nemůže odesílat e-maily, ale může je přijímat.\nProhibit send and receive limit – Uživatel nemůže odesílat ani přijímat e-maily."
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jaky je rozdil mezi hashem a sifrou?",
+    "odpoved": "hash - jednosmerny = data se zahashuji a uz je nikdo nedokaze prevezt zpet, na puvodni tvar\nsifra - pomoci nejakeho klice se zasifruje a nasledne se zase desifruje = prevede na puvodni stav"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jak funguje symetricka sifra?",
+    "odpoved": "zasifruje se pomoci jednoho klice (secret key), odsifruje se znovu pomoci tohoto jednoho klice (secret key)"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jak funguje asymetricka sifra?",
+    "odpoved": "odesilatel a prijemce si vymeni verejne klice, odesilatel zpravu zasifruje pomoci sveho private klice, posle ji prijemci a ten si zpravu desifruje pomoci odesilatelova verejneho klice"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jake jsou nevyhody symetricke sifry?",
+    "odpoved": "kdyz kdokoliv zjisti secret key, muze pak zpravy jednoduse pomoci tohoto klice desifrovat a dostat se tak k datum"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jmenujte priklad asymetricke sifry",
+    "odpoved": "RSA"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jmenujte priklad hashovaci funkce",
+    "odpoved": "SHA, MD5, bcrypt"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jake dve veci musi zajistit elektronicky podpis?",
+    "odpoved": "Autenticitu - overeni identity odesilatele (podepisujici osoby)\nIntegritu - ze data nebyla zmenena"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Proc se v elektronickem podpisu pouziva hash?",
+    "odpoved": "pro zjisteni, zda se data nezmenila"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Co obsahuje zprava Server Hello v TLS handshaku?",
+    "odpoved": "nahodne generovany retezec, verejnou cast certifikatu"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Co je potreba k vygenerovani Master Key v TLS handshaku?",
+    "odpoved": "Pre-master key, nahodne generovany retezec od klienta i serveru"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "K cemu slouzi Smart Card?",
+    "odpoved": "K autentizaci uzivatele, je zde ulozen certifikat s verejnym a privatnim klicem"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Co je potreba, abychom mohli vyuzivat funkci SSO?",
+    "odpoved": "vytvoreni vztahu duvery mezi pocitacem a AD - vznika pripojenim PC k domene AD"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "K cemu slouzi funkce Windows Vault?",
+    "odpoved": "Kdyz nejde pouzit integrovane overeni v AD (SSO)\nWindows Vault - uloziste prihlasovacich udaju"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Proti jakemu typu utoku je odolny prihlasovaci protokol Kerberos?",
+    "odpoved": "proti odposlouchavacim utokum"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Pomoci ceho probiha overovani uzivatelu v protokolu Kerberos?",
+    "odpoved": "TGT, klient/server ticket"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Z jakych casti se sklada prihlasovaci protokol Kerberos?",
+    "odpoved": "AS, TGS, KDC, SS, klient"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Ktera cast protokolu Kerberos slouzi pro vydavani ticketu?",
+    "odpoved": "KDC - AS a TGS"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Proc se pri overovani v protokolu Kerberos neposila po siti heslo?",
+    "odpoved": "misto hesla se autentizuje pomoci sifrovanych ticketu (TGT, klient/server ticket)"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Jake klice protokolu Kerberos sifruji komunikaci mezi klientem a serverem?",
+    "odpoved": "klient/TGS session key, klient/server session key a secret klicem, pomoci ktereho je sifrovan TGT nebo klient/server ticket"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Co je to autentikator v protokolu Kerberos? Jake obsahuje udaje?",
+    "odpoved": "slouzi k overeni klienta\nobsahuje User ID a casove znacky"
   }
 ]
 
