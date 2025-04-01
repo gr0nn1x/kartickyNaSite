@@ -703,6 +703,141 @@
     "okruh": "Exchange",
     "otazka": "Jaky je rozdil mezi Send As a Send on Behalf v MS Exchange?",
     "odpoved": "Send As umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli.\nSend on Behalf umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Jak se nastavuje staticka route?",
+    "odpoved": "ip route add 10.0.0.0/24 via 10.0.0.1 dev enp0s3"
+  },
+  {
+    "okruh": "Routovani",
+    "otazka": "Jak se vypisuje routovaci tabulka?",
+    "odpoved": "ip r"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "V jakem casovem okamziku zada klient obvykle o obnovu IP adresy?",
+    "odpoved": "V pulce doby zapujcky"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Jaky je rozdil mezi DHCPACK a DHCPNAK",
+    "odpoved": "DHCPACK - server prideluje klientovi IP, masku a rozsirujici info\nDHCPNAK - server zamita prideleni IP, masky a rozsirujiciho infa na klienta"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "V jakem pripade potrebujeme sluzbu DHCP Relay",
+    "odpoved": "Kdyz budeme chtit komunikovat s DHCP Serverem, ktery je v jinem subnetu pres router"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "Co je to obor adres (scope), jake obsahuje informace?",
+    "odpoved": "scope je cast v konfiguracnim souboru, kde se nachazi hlavni udaje jako:\n- pool (rozsah IP adres), maska, gateway, domena, dns servery"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi Multicast scope?",
+    "odpoved": "Je to scope, ale pro multicastove adresy"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi superscope?",
+    "odpoved": "Superscope obsahuje vice scopu, takze kdyz mame vic rozhrani a na kazdem se budou pridelovat jine IP, tak k tomu budeme potrebovat vice scopu = superscope"
+  },
+  {
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi v DHCP rezervace IP adresy, vyjimky a filtry?",
+    "odpoved": "Rezervace - prideli zarizeni konkretni IP adresu na konkretni MAC adresu\nVyjimky - blokuji urcite IP v rozsahu toho poolu, aby je neprideloval\nFiltry - Povoluji nebo omezuji pristup k DHCP pres MAC adresy"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Co je to PDC emulator?",
+    "odpoved": "Role, ktera zajistuje kompatibilitu s historickymi systemy"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "K cemu slouzi AD ve Win Serveru? (4 moznosti)",
+    "odpoved": "Sprava uzivatelu, skupin a zarizeni\nSeskupovani objektu\nNasazeni GPO\nK autentizaci a autorizaci"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Na cem je AD zavisle (bez ceho nejde provozovat)",
+    "odpoved": "Win server, Domain Controller, DNS, Kerberos"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jak omezite pouziti GPO pouze na konkretni uzivatele a PC uvnitr objektu?",
+    "odpoved": "pomoci WMI filtru nebo security filtru"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to politika v nftables, jakych muze nabyvat hodnot?",
+    "odpoved": "politika urcuje vychozi akci pro pakety, ktere neodpovidaji zadnemu pravidlu\naccept - povoli komunikaci\ndrop - zamitne komunikaci"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jakou direktivou se sleduje stav spojeni v nftables?",
+    "odpoved": "ct state"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to hook v nftables?",
+    "odpoved": "hooky slouzi k zachyceni sitove komunikace a naslednemu zpracovani pomoci pravidel"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Popiste metody HTTP pro ukladani, aktualizaci a mazani dat na serveru.",
+    "odpoved": "PUT - aktualizuje vsechny data na serveru\nPATCH - aktualizuje urcita data na serveru\nDELETE - smaze data na serveru"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jakou metodou se vytvari HTTPS tunel skrze proxy server?",
+    "odpoved": "CONNECT"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Jaka je nativni technologie pro dynamicke stranky v IIS?",
+    "odpoved": "ASP.NET"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co dela funkce directory browsing v IIS?",
+    "odpoved": "umoznuje prohlizet slozky na webu"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jake jsou omezeni edic windows serveru?",
+    "odpoved": "Essentials - omezeny pocet uzivatelu 25-50, nelze virtualizovat, max 64GB RAM\nStandard - neomezeny pocet uzivatelu, omezeni virtualizace - na 1 HW muze bezet max. 2x, az 4TB RAM\nDatacenter - neomezeny pocet virtualizaci"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jaky je rozdil mezi rezimem internet a smarthost v exim4?",
+    "odpoved": "internet - dorucuje emaily pres SMTP primo na cilovy server\nsmarthost - odesilani pres SMTP relay"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je potreba k instalaci Exchange serveru?",
+    "odpoved": "Win server, AD, DNS, IIS"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jake komunikacni protokoly pouziva Exchange server?",
+    "odpoved": "SMTP, IMAP4, POP3, MAPI"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi Mailbox role v Exchange serveru?",
+    "odpoved": "ke sprave emailovych schranek klientu"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi Client Access Role v Exchange serveru?",
+    "odpoved": "k pristupu klientu k MS Exchange"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Popiste limity velikosti postovni schranky.",
+    "odpoved": "Warning limit – Upozornění, že schránka se blíží k limitu.\nProhibit send limit – Uživatel nemůže odesílat e-maily, ale muze je prijimat.\nProhibit send and receive limit – Uživatel nemůže odesílat ani přijímat e-maily."
   }
 ]
 
