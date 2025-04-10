@@ -903,6 +903,56 @@
     "okruh": "Autentifikace AD",
     "otazka": "Co je to autentikator v protokolu Kerberos? Jake obsahuje udaje?",
     "odpoved": "slouzi k overeni klienta\nobsahuje User ID a casove znacky"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Podle čeho vybírá RIP cesty v síti?",
+    "odpoved": "Podle počtu hopů (skoků)"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaký má RIP čas konvergence?",
+    "odpoved": "pomalou konvergenci"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Do jaké skupiny RP (routovacích protokolů) patří RIP?",
+    "odpoved": "Distance-vector"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaké jsou nevýhody RIP protokolu?",
+    "odpoved": "neškáluje dobře (pro menší sítě), nejkratší cesta (podle počtu hopů), pomalejší ve většině případech, pomalá konvergence"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Vypište RIP timery s krátkým popisem",
+    "odpoved": "Update timer - router odesílá pravidelnou aktualizaci směrovacích tabulek ostatním směrovačům (každých 30 sekund +- sekund, aby se nezahlcovala síť) ||| Invalid timer - pokud nějaký router přestane posílat update timer, tak nastane invalid timer a nastaví se metrika na 16 (180 sekund) ||| Flush timer - vymaže cestu z routovacích tabulek (180 + 60 - sám 60 sekund) ||| Holddown timer - když z jiného routeru selže trasa, tak začne čekat, dokud od sousedního routeru příjde lepší metrika. Pokud příjde, aktualzije si svoji routovací tabulku. Pokud jsou ty metriky horší, tak si ponechá původní routovací tabulku"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Kolik maximálně routerů může být v síti s RIP routery?",
+    "odpoved": "15 routerů"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Co říká pravidlo Split horizon?",
+    "odpoved": "Router neposílá informace o trase zpět na rozhraní, odkud ji získal"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaký je rozdíl mezi dvoubodovou a tříbodovou smyčkou (můžete nakreslit)?",
+    "odpoved": "Dvoubodová smyčka = smyčka, ve které se nacházají dva routery. Mezi sebou si přehazují paket a každý si myslí, že přes toho druhého to je efektivnější a tím pádem to jde do smyčky ||| Tříbodová smyčka = smyčka, ve které se nacházejí tři routery a každý si myslí, že přes jeho souseda to vede do cílové adresy a každý si to myslí o tom druhém a takhle to jde zase do smyčky"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Co označuje v RIP metrika 16?",
+    "odpoved": "nedosažitelnou síť"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Na jakou adresu posílá RIPv2 routovací informace",
+    "odpoved": "Na multicastovou IP adresu 224.0.0.9"
   }
 ]
 
