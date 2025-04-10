@@ -57,7 +57,7 @@
   {
     "okruh": "Routovani",
     "otazka": "Jaky je rozdil mezi Ipconfig a Ifconfig?",
-    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani ||| IPconfig - Windows ||| Ifconfig - Linux"
+    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani | IPconfig - Windows | Ifconfig - Linux"
   },
   {
     "okruh": "DHCP",
@@ -112,7 +112,7 @@
   {
     "okruh": "DHCP",
     "otazka": "Jaký je rozdíl mezi DHCPACK a DHCPNAK?",
-    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info. ||| DHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
+    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info. | DHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
   },
   {
     "okruh": "DHCP",
@@ -157,7 +157,7 @@
    {
     "okruh": "DNS",
     "otazka": "Napište příklad A záznamu v DNS. K čemu slouží?",
-    "odpoved": "Příklad: ns1 IN A 10.0.0.1 ||| Slouží k překladu jmenného názvu na IP adresu."
+    "odpoved": "Příklad: ns1 IN A 10.0.0.1 | Slouží k překladu jmenného názvu na IP adresu."
   },
   {
     "okruh": "DNS",
@@ -177,12 +177,12 @@
   {
     "okruh": "DNS",
     "otazka": "Jaký je rozdíl mezi dopřednou a zpětnou zónou?",
-    "odpoved": "Dopředná zóna - překládá jmenné názvy na IP adresy ||| Zpětná zóna - překládá IP adresy na jmenné názvy"
+    "odpoved": "Dopředná zóna - překládá jmenné názvy na IP adresy | Zpětná zóna - překládá IP adresy na jmenné názvy"
   },
   {
     "okruh": "DNS",
     "otazka": "Jake udaje obsahuje zaznam MX v DNS?",
-    "odpoved": "Server pro elektronickou postu ||| domena IN MX priorita mail_server"
+    "odpoved": "Server pro elektronickou postu | domena IN MX priorita mail_server"
   },
   {
     "okruh": "DNS",
@@ -257,7 +257,7 @@
   {
     "okruh": "Windows Server",
     "otazka": "Co je to CAL?",
-    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci ||| Používá se u edic Standard a Datacenter"
+    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci | Používá se u edic Standard a Datacenter"
   },
   {
     "okruh": "Windows Server",
@@ -297,7 +297,7 @@
   {
     "okruh": "Samba",
     "otazka": "K cemu slouzi NBNS a jak se nazyva v OS Windows?",
-    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS ||| Ve Windows - WINS"
+    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS | Ve Windows - WINS"
   },
   {
     "okruh": "Samba",
@@ -307,7 +307,7 @@
   {
     "okruh": "Samba",
     "otazka": "K cemu slouzi v konfiguraci samby polozka create mask a directory mask",
-    "odpoved": "create mask - pristupova prava nove vytvorenych souboru ||| directory mask - pristupova prava nove vytvorenych slozek"
+    "odpoved": "create mask - pristupova prava nove vytvorenych souboru | directory mask - pristupova prava nove vytvorenych slozek"
   },
   {
     "okruh": "Samba",
@@ -322,7 +322,7 @@
   {
     "okruh": "Samba",
     "otazka": "Jake daemony pouziva Samba?",
-    "odpoved": "smbd -  pro sdileni souboru a tiskaren ||| nmbd - pro preklad jmennych nazvu na IP adresy ||| winbindd - pro spolupraci s WIN NT4"
+    "odpoved": "smbd -  pro sdileni souboru a tiskaren | nmbd - pro preklad jmennych nazvu na IP adresy | winbindd - pro spolupraci s WIN NT4"
   },
   {
     "okruh": "Samba",
@@ -332,7 +332,7 @@
   {
     "okruh": "Samba",
     "otazka": "Vypiste typy komunikace protokolu SMB/CIFS a priradte protokoly a porty",
-    "odpoved": "Prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP ||| neprima - NetBIOS API | jmenné služby (něco jako DNS) - 137 TCP i UDP | nestavove - 138 UDP | stavove - 139 TCP"
+    "odpoved": "Prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP ||| Neprima - NetBIOS API | jmenné služby (něco jako DNS) - 137 TCP i UDP | nestavove - 138 UDP | stavove - 139 TCP"
   },
   {
     "okruh": "Samba",
@@ -597,7 +597,7 @@
   {
     "okruh": "Apache",
     "otazka": "Z jakych casti se sklada URL?",
-    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj ||| protokol://adresa:port/dokument?query_string"
+    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj | protokol://adresa:port/dokument?query_string"
   },
   {
     "okruh": "Apache",
@@ -622,12 +622,12 @@
   {
     "okruh": "Apache",
     "otazka": "Jake soubory je potreba upravit v apache2 pro provoz http a https stranek?",
-    "odpoved": "Pro HTTP: `apache2.conf`, `security.conf`, `000-default.conf`. Pro HTTPS: `default-ssl.conf`, `ssl.conf`"
+    "odpoved": "Pro HTTP: `apache2.conf`, `security.conf`, `000-default.conf` | Pro HTTPS: `default-ssl.conf`, `ssl.conf`"
   },
   {
     "okruh": "Apache",
     "otazka": "Jaky je rozdil mezi slozkami conf, mods a sites v apache2?",
-    "odpoved": "<b>conf</b> - hlavni konfiguracni soubory - globalni nastaveni, <b>mods</b> - nastaveni pro moduly (<b>mod</b>ule<b>s</b>), <b>sites</b> - nastaveni pro jednotlive weby"
+    "odpoved": "conf - hlavni konfiguracni soubory - globalni nastaveni | mods - nastaveni pro moduly (modules) | sites - nastaveni pro jednotlive weby"
   },
   {
     "okruh": "Apache",
@@ -637,7 +637,7 @@
   {
     "okruh": "Apache",
     "otazka": "Jaky je rozdil mezi slozkami oznacenymi jako available a enabled?",
-    "odpoved": "available - obsahuje dostupnou konfiguraci, ale nemusi byt aktivni\n enabled - obsahuje aktivni konfiguraci"
+    "odpoved": "available - obsahuje dostupnou konfiguraci, ale není aktivní | enabled - obsahuje aktivní konfiguraci"
   },
   {
     "okruh": "IIS",
@@ -647,12 +647,12 @@
   {
     "okruh": "IIS",
     "otazka": "Co dela funkce IP and Domain Restrictions v IIS",
-    "odpoved": "povolení nebo zablokování přístupu k webové aplikaci na základě IP adres nebo domén"
+    "odpoved": "Povolení nebo zablokování přístupu k webové aplikaci na základě IP adres nebo domén"
   },
   {
     "okruh": "IIS",
     "otazka": "K cemu slouzi v IIS bindings?",
-    "odpoved": "prirazuje webovou aplikaci na spravy <b>port, IP adresu a protokol</b> (HTTP nebo HTTPS)"
+    "odpoved": "Slouží k přiřazení webové aplikaci ke konkrétní kombinaci IP adresy, portu a protokolu (např. HTTP nebo HTTPS)"
   },
   {
     "okruh": "IIS",
@@ -667,7 +667,7 @@
   {
     "okruh": "Exim4",
     "otazka": "Jake porty a k cemu se pouziva SMTP protokol?",
-    "odpoved": "25 - externí, nešifrovaný; 465 - externí, šifrovaný; 587 - interní, šifrovaný"
+    "odpoved": "25 (nešifrovaný) - pro přenos elektronické pošty mezi SMTP severy | 465 (starší, málo používáný, šifrovaný) a 587 (standard, nejčastěji používaný, šifrovaný) - pro odesílání elektronické pošty od klientů na SMTP server"
   },
   {
     "okruh": "Exim4",
@@ -682,12 +682,12 @@
   {
     "okruh": "Exim4",
     "otazka": "Co je to MSA?",
-    "odpoved": "Mail Submission Agent - stará se o doručení zprávy od odesílatele k příjemci"
+    "odpoved": "Mail Submission Agent - přijímá elektronickou poštu od odesílatele (MUA) a předává je MTA"
   },
   {
     "okruh": "Exim4",
     "otazka": "Vypište základní protokoly a porty pro přístup k e-mailové schránce",
-    "odpoved": "POP3: 110 - nešifrovaný, 995 - šifrovaný; IMAP4: 143 - nešifrovaný, 993 - šifrovaný"
+    "odpoved": "POP3: 110 - nešifrovaný, 995 - šifrovaný | IMAP4: 143 - nešifrovaný, 993 - šifrovaný"
   },
   {
     "okruh": "Exim4",
@@ -697,7 +697,7 @@
   {
     "okruh": "Exim4",
     "otazka": "Jaký je rozdíl mezi režimem internet a smarthost v exim4?",
-    "odpoved": "internet:\n- doručuje emaily přes SMTP přímo na cílový server\n\nsmarthost:\n- odesílání přes SMTP relay"
+    "odpoved": "internet - doručuje emaily přes SMTP přímo na cílový server | smarthost - odesílání přes SMTP relay"
   },
   {
     "okruh": "Exim4",
@@ -712,7 +712,7 @@
   {
     "okruh": "Exim4",
     "otazka": "Co je to Open Relay a jaká jsou rizika?",
-    "odpoved": "Open Relay umožňuje komukoliv odkudkoliv posílat e-maily bez ověření; spameři ho často využívají"
+    "odpoved": "Open Relay umožňuje komukoliv odkudkoliv posílat e-maily bez ověření. Spameři ho často využívají."
   },
   {
     "okruh": "Exim4",
@@ -722,52 +722,47 @@
   {
     "okruh": "Exim4",
     "otazka": "V jakém formátu se přes SMTP protokol přenáší data?",
-    "odpoved": "Přes text a obrázky pomocí MIME"
+    "odpoved": "Přes text a jiný typy dat (např. obrázky, přílohy) přes MIME"
   },
   {
     "okruh": "Exim4",
     "otazka": "Co je to smarthost?",
-    "odpoved": "email se neposila primo pres internet, ale pres SMTP relay\n vetsi zabezpeceni, preposila se mezi SMTP servery"
+    "odpoved": "email se neposila primo pres internet, ale pres SMTP relay | vetsi zabezpeceni, preposila se mezi SMTP servery"
   },
   {
     "okruh": "Exchange",
     "otazka": "Co je to Exchange server?",
-    "odpoved": "Role od microsoftu, ktera slouzi pro spravu a provoz groupwarovych sluzeb"
+    "odpoved": "Role od Microsoftu, ktera slouzi pro spravu a provoz groupwarovych sluzeb"
   },
   {
     "okruh": "Exchange",
     "otazka": "Co to jsou groupwarove sluzby? Vyjmenujte!",
-    "odpoved": "usnadnuji tymovou spolupraci a komunikaci\n Posilani emailu, Kalendare, Ukoly, Verejne slozky, UM"
+    "odpoved": "Posilani emailu, Kalendare, Ukoly, Verejne slozky, Unified-messaging, Sdílená + vzájemná spolupráce"
   },
   {
     "okruh": "Exchange",
     "otazka": "Co je nastroj Unified Messaging?",
-    "odpoved": "spojuje ruzne typy komunikace do jedne platformy"
+    "odpoved": "spojuje ruzne typy komunikace (např. hlasové zprávy, SMS, fax) do jedne platformy"
   },
   {
     "okruh": "Exchange",
     "otazka": "Co je to MTA?",
-    "odpoved": "Mail Transfer Agent - stara se o komunikaci mezi SMTP servery"
-  },
-  {
-    "okruh": "Exchange",
-    "otazka": "Co je to MSA?",
-    "odpoved": "Mail Submission Agent - prebirá zpravy od odesílatele (MUA) a predává je MTA pro doručení k prijemci"
+    "odpoved": "Mail Transfer Agent - program zajišťující přepravu elektronické pošty mezi SMTP servery"
   },
   {
     "okruh": "Exchange",
     "otazka": "Jake MUA muzeme pouzit s Exchange serverem?",
-    "odpoved": "Outlook, Outlook Web Access - OWA, Thunderbird"
+    "odpoved": "Outlook, Outlook Web Access - OWA, Thunderbird, Apple Mail"
   },
   {
     "okruh": "Exchange",
     "otazka": "Jaký formát databáze používá Exchange server?",
-    "odpoved": "Tranzitní SQL"
+    "odpoved": "Transakční SQL"
   },
   {
     "okruh": "Exchange",
     "otazka": "K cemu slouzi room nebo equipment mailbox v MS Exchange?",
-    "odpoved": "Room mailbox - k rezervaci a správě místností (např. konferenčních místností, skolicich místnosti) v organizaci.\nEquipment mailbox - k rezervaci a správě vybavení (např. projektorů, laptopů) pro schůzky nebo události."
+    "odpoved": "Room mailbox - k rezervaci a správě místností (např. konferenčních místností, skolicich místnosti) v organizaci. | Equipment mailbox - k rezervaci a správě vybavení (např. projektorů, laptopů) pro schůzky nebo události."
   },
   {
     "okruh": "Exchange",
@@ -777,7 +772,7 @@
   {
     "okruh": "Exchange",
     "otazka": "Jaky je rozdil mezi Send As a Send on Behalf v MS Exchange?",
-    "odpoved": "Send As umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli.\nSend on Behalf umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
+    "odpoved": "Send As - umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli. | Send on Behalf - umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
   },
   {
     "okruh": "Exchange",
@@ -797,22 +792,22 @@
   {
     "okruh": "Exchange",
     "otazka": "K čemu slouží Client Access Role v Exchange serveru?",
-    "odpoved": "k přístupu klientů k MS Exchange"
+    "odpoved": "k přístupu klientů k MS Exchange službám"
   },
   {
     "okruh": "Exchange",
     "otazka": "Popište limity velikosti poštovní schránky.",
-    "odpoved": "Warning limit – Upozornění, že schránka se blíží k limitu.\nProhibit send limit – Uživatel nemůže odesílat e-maily, ale může je přijímat.\nProhibit send and receive limit – Uživatel nemůže odesílat ani přijímat e-maily."
+    "odpoved": "Warning limit – Upozornění, že se schránka blíží k limitu. | Prohibit send limit – Uživatel nemůže odesílat e-maily, ale může je přijímat. | Prohibit send and receive limit – Uživatel nemůže odesílat ani přijímat e-maily."
   },
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Jaky je rozdil mezi hashem a sifrou?",
-    "odpoved": "hash - jednosmerny = data se zahashuji a uz je nikdo nedokaze prevezt zpet, na puvodni tvar\nsifra - pomoci nejakeho klice se zasifruje a nasledne se zase desifruje = prevede na puvodni stav"
+    "odpoved": "Hash - jednosměrný = data se zahashují a už je nikdo nedokáže převézt zpět na původní tvar | Šifra - obousměrný = data zašifrujeme tajným klíčem tak, aby je mohl jejich příjemce podobným způsobem znovu dešifrovat"
   },
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Jak funguje symetricka sifra?",
-    "odpoved": "zasifruje se pomoci jednoho klice (secret key), odsifruje se znovu pomoci tohoto jednoho klice (secret key)"
+    "odpoved": "data se šifrují i dešifrují pomocí tajného klíče, který je předem znám oběma komunikujícím stranám"
   },
   {
     "okruh": "Zabezpecena Komunikace",
@@ -822,7 +817,7 @@
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Jake jsou nevyhody symetricke sifry?",
-    "odpoved": "kdyz kdokoliv zjisti secret key, muze pak zpravy jednoduse pomoci tohoto klice desifrovat a dostat se tak k datum"
+    "odpoved": "kdyz kdokoliv zjisti tajný klíč, muze pak zpravy jednoduse desifrovat a dostat se tak k datum"
   },
   {
     "okruh": "Zabezpecena Komunikace",
@@ -837,12 +832,12 @@
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Jake dve veci musi zajistit elektronicky podpis?",
-    "odpoved": "Autenticitu - overeni identity odesilatele (podepisujici osoby)\nIntegritu - ze data nebyla zmenena"
+    "odpoved": "Autenticitu - overeni identity odesilatele (podepisujici osoby) | Integritu - ze data nebyla zmenena"
   },
   {
     "okruh": "Zabezpecena Komunikace",
     "otazka": "Proc se v elektronickem podpisu pouziva hash?",
-    "odpoved": "pro zjisteni, zda se data nezmenila"
+    "odpoved": "Protože umožňuje ověřit integritu dat a zajistit, že během přenosu nebo uchovávání nebyla data změněna"
   },
   {
     "okruh": "Zabezpecena Komunikace",
@@ -867,7 +862,7 @@
   {
     "okruh": "Autentifikace AD",
     "otazka": "K cemu slouzi funkce Windows Vault?",
-    "odpoved": "Kdyz nejde pouzit integrovane overeni v AD (SSO)\nWindows Vault - uloziste prihlasovacich udaju"
+    "odpoved": "Kdyz nejde pouzit integrovane overeni v AD (SSO) | Windows Vault - uloziste prihlasovacich udaju"
   },
   {
     "okruh": "Autentifikace AD",
@@ -882,12 +877,12 @@
   {
     "okruh": "Autentifikace AD",
     "otazka": "Z jakych casti se sklada prihlasovaci protokol Kerberos?",
-    "odpoved": "AS, TGS, KDC, SS, klient"
+    "odpoved": "AS (Authentication Server), TGS (Ticket Granting Server), KDC (Key Distribution Center), SS (Service Server), Klient"
   },
   {
     "okruh": "Autentifikace AD",
     "otazka": "Ktera cast protokolu Kerberos slouzi pro vydavani ticketu?",
-    "odpoved": "KDC - AS a TGS"
+    "odpoved": "KDC se skládá ze dvou částí: AS a TGS"
   },
   {
     "okruh": "Autentifikace AD",
@@ -897,12 +892,12 @@
   {
     "okruh": "Autentifikace AD",
     "otazka": "Jake klice protokolu Kerberos sifruji komunikaci mezi klientem a serverem?",
-    "odpoved": "klient/TGS session key, klient/server session key a secret klicem, pomoci ktereho je sifrovan TGT nebo klient/server ticket"
+    "odpoved": "klient/TGS session key | klient/server session key | secret key, pomoci ktereho je sifrovan TGT nebo klient/server ticket"
   },
   {
     "okruh": "Autentifikace AD",
     "otazka": "Co je to autentikator v protokolu Kerberos? Jake obsahuje udaje?",
-    "odpoved": "slouzi k overeni klienta\nobsahuje User ID a casove znacky"
+    "odpoved": "slouzi k overeni klienta | obsahuje User ID a casove znacky"
   },
   {
     "okruh": "RIP",
