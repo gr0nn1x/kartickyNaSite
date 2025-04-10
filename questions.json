@@ -57,7 +57,7 @@
   {
     "okruh": "Routovani",
     "otazka": "Jaky je rozdil mezi Ipconfig a Ifconfig?",
-    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani\nIPconfig - Windows\nIfconfig - Linux"
+    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani ||| IPconfig - Windows ||| Ifconfig - Linux"
   },
   {
     "okruh": "DHCP",
@@ -82,7 +82,7 @@
   {
     "okruh": "DHCP",
     "otazka": "Kdo a kdy posila zpravu DHCP Decline?",
-    "odpoved": "klient, pokud je adresa v siti uz pouzita, tak zamita offer"
+    "odpoved": "klient, pokud je adresa v siti uz pouzita, tak zamitne DHCP Offer"
   },
   {
     "okruh": "DHCP",
@@ -112,7 +112,7 @@
   {
     "okruh": "DHCP",
     "otazka": "Jaký je rozdíl mezi DHCPACK a DHCPNAK?",
-    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info.\nDHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
+    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info. ||| DHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
   },
   {
     "okruh": "DHCP",
@@ -122,7 +122,7 @@
   {
     "okruh": "DHCP",
     "otazka": "Co je to obor adres (scope), jaké obsahuje informace?",
-    "odpoved": "Scope je část v konfiguračním souboru, kde se nachází hlavní údaje jako:\n- pool (rozsah IP adres)\n- maska\n- gateway\n- doména\n- DNS servery"
+    "odpoved": "Scope je část v konfiguračním souboru, kde se nachází hlavní údaje jako: pool (rozsah IP adres), maska, gateway, doména, DNS servery"
   },
   {
     "okruh": "DHCP",
@@ -132,32 +132,32 @@
   {
     "okruh": "DHCP",
     "otazka": "K čemu slouží superscope?",
-    "odpoved": "Superscope obsahuje více scopů.\nPoužívá se když máme více rozhraní a na každém se přidělují jiné IP.\nPak potřebujeme více scopů = superscope."
+    "odpoved": "Superscope obsahuje více scopů. Používá se když máme více rozhraní a na každém se přidělují jiné IP. Pak potřebujeme více scopů = superscope."
   },
   {
     "okruh": "DHCP",
     "otazka": "K čemu slouží v DHCP rezervace IP adresy, výjimky a filtry?",
-    "odpoved": "Rezervace - přidělí zařízení konkrétní IP adresu na konkrétní MAC adresu.\nVýjimky - blokují určité IP v rozsahu poolu, aby je nepřiděloval.\nFiltry - povolují/omezují přístup k DHCP přes MAC adresy."
+    "odpoved": "Rezervace - přidělí zařízení konkrétní IP adresu na konkrétní MAC adresu. Výjimky - blokují určité IP v rozsahu poolu, aby je nepřiděloval. Filtry - povolují/omezují přístup k DHCP přes MAC adresy."
   },
   {
     "okruh": "DNS",
     "otazka": "Jake 2 ulohy plni rekurzivni DNS server?",
-    "odpoved": "rekurzivni hledani\ndotazy uklada do cache"
+    "odpoved": "rekurzivni hledani, dotazy uklada do cache"
   },
   {
     "okruh": "DNS",
     "otazka": "Jake jsou zakladni urovne systemu DNS?",
-    "odpoved": ". - korenovy server\n.cz - TLD (Top level domain)\nspsmb - Second level domain"
+    "odpoved": ". - korenovy server, .cz - TLD (Top level domain), spsmb - Second level domain"
   },
   {
     "okruh": "DNS",
     "otazka": "Jaky je rozdil mezi primarnim a sekundarnim DNS serverem?",
-    "odpoved": "Primarni je ten hlavni, kdyz se s nim neco stane tak zacne fungovat sekundarni, ktery je takovy backup"
+    "odpoved": "Primarni je ten hlavni. V případě zátěže nebo selhání primárního serveru zacne fungovat sekundarni, ktery je takovy backup."
   },
    {
     "okruh": "DNS",
     "otazka": "Napište příklad A záznamu v DNS. K čemu slouží?",
-    "odpoved": "Příklad:\nns1 IN A 10.0.0.1\n\nSlouží k překladu jmenného názvu na IP adresu."
+    "odpoved": "Příklad: ns1 IN A 10.0.0.1 ||| Slouží k překladu jmenného názvu na IP adresu."
   },
   {
     "okruh": "DNS",
@@ -177,12 +177,12 @@
   {
     "okruh": "DNS",
     "otazka": "Jaký je rozdíl mezi dopřednou a zpětnou zónou?",
-    "odpoved": "Dopředná zóna:\n- překládá jmenné názvy na IP adresy\n\nZpětná zóna:\n- překládá IP adresy na jmenné názvy"
+    "odpoved": "Dopředná zóna - překládá jmenné názvy na IP adresy ||| Zpětná zóna - překládá IP adresy na jmenné názvy"
   },
   {
     "okruh": "DNS",
     "otazka": "Jake udaje obsahuje zaznam MX v DNS?",
-    "odpoved": "Server pro elektronickou postu\nzona IN MX priorita mail_server"
+    "odpoved": "Server pro elektronickou postu ||| domena IN MX priorita mail_server"
   },
   {
     "okruh": "DNS",
@@ -192,12 +192,12 @@
   {
     "okruh": "DNS",
     "otazka": "Jake udaje obsahuje zaznam SOA?",
-    "odpoved": "udava zacatek zony\n1. domena\n2. primarni ns\n3. email spravce\n4. serial\n5. refresh\n6. retry\n7. expire\n8. TTL"
+    "odpoved": "udava zacatek zony, 1. domena | 2. primarni ns | 3. email spravce | 4. serial | 5. refresh | 6. retry | 7. expire | 8. TTL"
   },
   {
     "okruh": "DNS",
     "otazka": "Co udava NS zaznam?",
-    "odpoved": "Jaky ns je pro danou zonu autoritativni"
+    "odpoved": "Určuje, které jmenné servery (name servery) jsou autoritativní pro danou DNS zónu."
   },
   {
     "okruh": "DNS",
@@ -222,7 +222,7 @@
   {
   "okruh": "DNS",
   "otazka": "Jake protokoly nizsi vrstvy a proc pouziva DNS server?",
-  "odpoved": "- UDP (User Datagram Protocol) – Používá se pro většinu DNS dotazů, protože je rychlý a nevyžaduje navázání spojení. DNS dotazy jsou obvykle malé a UDP je efektivní pro přenos těchto informací.\n- TCP (Transmission Control Protocol) – Používá se v případě, že odpověď na DNS dotaz je příliš velká pro UDP (například při přenosu zónových souborů nebo při přetížení serveru). TCP zajišťuje spolehlivost a zaručuje doručení dat."
+  "odpoved": "UDP (User Datagram Protocol) – Používá se pro většinu DNS dotazů, protože je rychlý a nevyžaduje navázání spojení. DNS dotazy jsou obvykle malé a UDP je efektivní pro přenos těchto informací. ||| TCP (Transmission Control Protocol) – Používá se v případě, že odpověď na DNS dotaz je příliš velká pro UDP (například při přenosu zónových souborů nebo při přetížení serveru). TCP zajišťuje spolehlivost a zaručuje doručení dat."
   },
   {
     "okruh": "Windows Server",
@@ -257,7 +257,7 @@
   {
     "okruh": "Windows Server",
     "otazka": "Co je to CAL?",
-    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci"
+    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci ||| Používá se u edic Standard a Datacenter"
   },
   {
     "okruh": "Windows Server",
@@ -297,7 +297,7 @@
   {
     "okruh": "Samba",
     "otazka": "K cemu slouzi NBNS a jak se nazyva v OS Windows?",
-    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS\nVe Windows - WINS"
+    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS ||| Ve Windows - WINS"
   },
   {
     "okruh": "Samba",
@@ -307,7 +307,7 @@
   {
     "okruh": "Samba",
     "otazka": "K cemu slouzi v konfiguraci samby polozka create mask a directory mask",
-    "odpoved": "create mask - pristupova prava nove vytvorenych souboru\ndirectory mask-  pristupova prava nove vytvorenych slozek"
+    "odpoved": "create mask - pristupova prava nove vytvorenych souboru ||| directory mask - pristupova prava nove vytvorenych slozek"
   },
   {
     "okruh": "Samba",
@@ -322,22 +322,22 @@
   {
     "okruh": "Samba",
     "otazka": "Jake daemony pouziva Samba?",
-    "odpoved": "smbd -  pro sdileni souboru a tiskaren\nnmbd - pro preklad jmennych nazvu na IP adresy\nwinbindd - pro spolupraci s WIN NT4"
+    "odpoved": "smbd -  pro sdileni souboru a tiskaren ||| nmbd - pro preklad jmennych nazvu na IP adresy ||| winbindd - pro spolupraci s WIN NT4"
   },
   {
     "okruh": "Samba",
     "otazka": "Co dela testparm?",
-    "odpoved": "Zkontroluje konf. soubor smb.conf"
+    "odpoved": "Zkontroluje syntaxe hlavního konfiguračního souboru smb.conf"
   },
   {
     "okruh": "Samba",
     "otazka": "Vypiste typy komunikace protokolu SMB/CIFS a priradte protokoly a porty",
-    "odpoved": "prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP\nneprima - NetBIOS API\n    - jmenna sluzba (neco jako DNS) - 137 TCP i UDP\n    - nestavove - 138 UDP\n    - stavove - 139 TCP"
+    "odpoved": "Prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP ||| neprima - NetBIOS API | jmenné služby (něco jako DNS) - 137 TCP i UDP | nestavove - 138 UDP | stavove - 139 TCP"
   },
   {
     "okruh": "Samba",
     "otazka": "Vypiste zakladni nastroje pro praci se sambou + popis",
-    "odpoved": "testparm - kontrola konf. souboru smb.conf\nsmbpasswd\n    - - a - pridani uzivatelu\n    - - x - odstraneni uzivatelu\n    - - d - zakazani uzivatelu\n    - - e - povoleni uzivatelu\npdbedit -L - vypise seznam uzivatelu samby\nsmbstatus - informace o bezici sambe\nsmbclient - prace se sdilenymi slozkami"
+    "odpoved": "testparm - zkontroluje syntaxe hlavního konfiguračního souboru smb.conf | smbpasswd <prikaz> -> -a (pridani uzivatelu) -x (odstraneni uzivatelu) -d (zakazani uzivatelu) -e (povoleni uzivatelu) | pdbedit -L - vypise seznam uzivatelu samby | smbstatus - stav samba serveru | smbclient - prace se sdilenymi slozkami"
   },
   {
     "okruh": "Samba",
@@ -352,22 +352,22 @@
   {
     "okruh": "Samba",
     "otazka": "Co dela prikaz root preexec v konfiguraci Samby?",
-    "odpoved": "predtim, nez se povoli pristup uzivateli se z roota spusti nami zadany prikaz"
+    "odpoved": "nez se povoli pristup uzivateli, se z roota spusti nami zadany prikaz"
   },
   {
     "okruh": "Samba",
     "otazka": "Jakymi nastavenimi lze v konfiguraci Samby omezit moznost zapisu do sdilene slozky?",
-    "odpoved": "writeable = no\nwritable = no\nread only = yes"
+    "odpoved": "writeable = no | writable = no | read only = yes"
   },
   {
     "okruh": "Samba",
     "otazka": "Jak omezite v konfiguraci Samby rozhrani, na kterych Samba nasloucha klientum?",
-    "odpoved": "interfaces - napiseme konkretni rozhrani\nbind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
+    "odpoved": "interfaces - napiseme konkretni rozhrani | bind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
   },
   {
     "okruh": "Samba",
-    "otazka": "Jak pridame do Samby, ktera neni v domene noveho uzivatele?",
-    "odpoved": "useradd -s /bin/nologin -U test -G users\n- passwd test\n- smbpasswd -a test\n- smbpasswd -e test"
+    "otazka": "Jak pridame do Samby, ktera neni v domene, noveho uzivatele?",
+    "odpoved": "useradd -s /bin/nologin -U test -G users -> passwd test -> smbpasswd -a test -> smbpasswd -e test"
   },
   {
     "okruh": "AD",
@@ -391,7 +391,7 @@
   },
   {
     "okruh": "AD",
-    "otazka": "K čemu slouží primary domain controller emulator?",
+    "otazka": "K čemu slouží role primary domain controller emulator?",
     "odpoved": "Zajišťuje kompatibilitu s historickými systémy"
   },
   {
@@ -402,7 +402,7 @@
   {
     "okruh": "AD",
     "otazka": "Z čeho se skládá fyzická struktura v AD?",
-    "odpoved": "Sítě, domain controllery"
+    "odpoved": "Site (síť), domain controllery"
   },
   {
     "okruh": "AD",
@@ -417,32 +417,32 @@
   {
     "okruh": "AD",
     "otazka": "K čemu slouží AD ve Win Serveru? (4 možnosti)",
-    "odpoved": "1. Správa uživatelů, skupin a zařízení\n2. Seskupování objektů\n3. Nasazení GPO\n4. K autentizaci a autorizaci"
+    "odpoved": "1. Správa uživatelů, skupin a zařízení | 2. Seskupování objektů | 3. Nasazení GPO | 4. K autentizaci a autorizaci"
   },
   {
     "okruh": "AD",
     "otazka": "Na čem je AD závislé (bez čeho nejde provozovat)?",
-    "odpoved": "- Windows Server\n- Domain Controller\n- DNS\n- Kerberos"
+    "odpoved": "Windows Server, Domain Controller, DNS, Kerberos"
   },
   {
     "okruh": "GPO",
     "otazka": "K čemu slouží WMI filtry v GPO?",
-    "odpoved": "K vyfiltrování systémových politik"
+    "odpoved": "WMI filtry je nástroj, který umožňuje aplikovat GPO pouze na určité typy počítačů podle hardwarových/softwarových charakteristik, např. tiskárny, počítač s Windows 11"
   },
   {
     "okruh": "GPO",
     "otazka": "Kam se GPO ukládají?",
-    "odpoved": "C:\\Windows\\SYSVOL\\sysvol\\domena\\Policies"
+    "odpoved": "C:\\Windows\\SYSVOL\\sysvol\\'domena'\\Policies"
   },
   {
     "okruh": "GPO",
     "otazka": "Jaké jsou dvě základní politiky a co dělají?",
-    "odpoved": "Default domain policy - výchozí politika domény, Default domain controller policy - výchozí politika pro doménové řadiče"
+    "odpoved": "Default domain policy - výchozí politika, která se aplikuje na doménu | Default domain controller policy - výchozí politika, která se aplikuje pro doménové řadiče"
   },
   {
     "okruh": "GPO",
     "otazka": "Kdy použijeme pravidla GPO pro počítač a kdy pro uživatele?",
-    "odpoved": "Pro počítač - aplikace na všechny uživatele PC, Pro uživatele - aplikace na konkrétního uživatele nezávisle na PC"
+    "odpoved": "Pro počítač - aplikace na všechny uživatele PC | Pro uživatele - aplikace na konkrétního uživatele nezávisle na PC"
   },
   {
     "okruh": "GPO",
@@ -452,7 +452,7 @@
   {
     "okruh": "GPO",
     "otazka": "Jak je to s dědičností a pořadím vyhodnocování GPO?",
-    "odpoved": "Dědičnost: Nastavení z vyšších úrovní se dědí na nižší. Pořadí: Priorita podle čísel, menší číslo má větší prioritu"
+    "odpoved": "Dědičnost: Nastavení z vyšších úrovní se dědí na nižší | Pořadí: Priorita podle čísel, menší číslo má větší prioritu"
   },
   {
     "okruh": "GPO",
@@ -467,7 +467,7 @@
   {
     "okruh": "GPO",
     "otazka": "Jaký je rozdíl mezi nástrojem Group Policy Modeling a Group Policy Results?",
-    "odpoved": "Group Policy Modeling - simulace politik, Group Policy Results - zjištění aktuálního stavu politik"
+    "odpoved": "Group Policy Modeling - simulátor pro předpověd aplikování politik | Group Policy Results - ukáže skutečný výsledek aplikace politiky"
   },
   {
     "okruh": "GPO",
@@ -477,17 +477,17 @@
   {
     "okruh": "GPO",
     "otazka": "Jak omezíte použití GPO pouze na konkrétní uživatele a PC uvnitř objektu?",
-    "odpoved": "Pomoci:\n1. WMI filtru - filtrování podle hardwarových/softwarových charakteristik\n2. Security filtru - filtrování podle uživatelských/počítačových skupin AD"
+    "odpoved": "Pomoci: WMI filtry - filtrování podle hardwarových/softwarových charakteristik, např. tiskárny, počítač s Windows 11 | Security filtry - filtrování podle uživatelských/počítačových skupin AD"
   },
   {
     "okruh": "Firewall",
     "otazka": "Co presne dela firewall?",
-    "odpoved": "kontroluje a filtruje síťový provoz na základě předem definovaných pravidel. Jeho hlavním účelem je chránit zařízení a sítě před neoprávněným přístupem, útoky, a škodlivým provozem. Rozhoduje, zda povolí nebo zablokuje datové pakety na základě jejich charakteristik, jako je IP adresa, port, protokol nebo obsah."
+    "odpoved": "Kontroluje a filtruje síťový provoz na základě předem definovaných pravidel. Jeho hlavním účelem je chránit zařízení a sítě před neoprávněným přístupem, útoky, a škodlivým provozem. Rozhoduje, zda povolí nebo zablokuje datové pakety na základě jejich charakteristik, jako je IP adresa, port, protokol nebo obsah."
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou zakladni typy firewallu, na jakych ISO/OSI vrstvach pracuji?",
-    "odpoved": "1. <b>nestavové firewally</b> (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na sitove vrstve + transportni vrstve kvuli portum. 2. <b>stavové firewally</b> (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na transportni vrstve. 3. <b>aplikační firewally</b> - systemy, ktere rozumi aplikacni vrstve. Pracuje na aplikacni vrstve."
+    "odpoved": "1. Nestavové firewally (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na 3. (síťové) a 4. (trasnportní) vrstve kvuli portum. | 2. Stavové firewally (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na 4. (transportní) vrstvě. | 3. Aplikační firewally - systemy, ktere rozumi aplikacni vrstve. Pracuje na 7. (aplikační) vrstve."
   },
   {
     "okruh": "Firewall",
@@ -497,62 +497,62 @@
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou typy NATu?",
-    "odpoved": "1. <b>1:1</b> – statická konfigurace 1 veřejné IP na jednu privátní IP 2. <b>1:N</b> - mapuje více privátních IP na jednu veřejnou (NAT overload) 3. <b>N:N</b> – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
+    "odpoved": "1. 1:1 – statická konfigurace 1 veřejné IP na jednu privátní IP | 2. 1:N - mapuje více privátních IP na jednu veřejnou (NAT overload) | 3. N:N – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake existuji typy hooku v nftables, co presne delaji?",
-    "odpoved": "1. Prerouting – prichozi nat (internet → vnitrni sit)\n2. Postrouting – odchozi nat (vnitrni sit → internet)\n3. Input – prichozi komunikace\n4. Output – odchozi komunikace\n5. Forward – pruchozi komunikace"
+    "odpoved": "1. Prerouting – prichozi nat (internet → vnitrni sit) | 2. Postrouting – odchozi nat (vnitrni sit → internet) | 3. Input – prichozi komunikace | 4. Output – odchozi komunikace | 5. Forward – pruchozi komunikace"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou typy retezcu v nftables?",
-    "odpoved": "1. <b>filter</b> - vychozi 2. <b>nat</b> - provadi natovani 3. <b>route</b> - meni smerovani paketu"
+    "odpoved": "1. filter - vychozi | 2. nat - provadi natovani | 3. route - meni smerovani paketu"
   },
   {
     "okruh": "Firewall",
     "otazka": "Co je priorita nftables, jakych muze nabyvat hodnot?",
-    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita. 1. <b>dstnat</b>: -100 2. <b>filter</b>: 0 3. <b>srcnat</b>: 100"
+    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita | 1. dstnat: -100 | 2. filter: 0 | 3. srcnat: 100"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake akce v nftables slouzi pro povoleni a zakazani komunikace (kratky popis)?",
-    "odpoved": "<b>accept</b> – povoleni komunikace, <b>drop</b> – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), <b>reject</b> – podobné jako drop, vrací zpět chybovou zprávu"
+    "odpoved": "accept – povoleni komunikace, drop – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), reject – jako drop, ale vrací zpět chybovou zprávu"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jaky je rozdil mezi akci jump a goto v nftables?",
-    "odpoved": "<b>Jump</b> – přechází do jiného řetězce a po dokončení pokračuje zpět. <b>Goto</b> – přechází do jiného řetězce bez návratu zpet."
+    "odpoved": "Jump – přechází do jiného řetězce a po dokončení pokračuje zpět. | Goto – přechází do jiného řetězce bez návratu zpet."
   },
   {
     "okruh": "Firewall",
     "otazka": "Lze v nftables presmerovat komunikaci na jiny port? Jak?",
-    "odpoved": "Ano, pomocí akce <b>dnat</b>: `dnat to :<nový_port>`"
+    "odpoved": "Ano, pomocí akce dnat: `dnat to [adresa:port]` a redirect: `redirect to [:port]`"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jaka je struktura nftables (casti, pres ktere prochazi komunikace)?",
-    "odpoved": "Tabluky → Retezce → Hooky → Pravidla"
+    "odpoved": "Tabulky → Retezce → Hooky → Pravidla"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou direktivy pro zdrojove a cilove porty a IP adresy v nftables?",
-    "odpoved": "sport, dport\n- saddr, daddr"
+    "odpoved": "Porty: sport, dport | IP adresy: saddr, daddr"
   },
   {
     "okruh": "Firewall",
     "otazka": "Jake jsou akce pro NAT v nftables?",
-    "odpoved": "dnat to [adresa:port] - urcuje, na jakou interni adresu v LAN ma byt paket smerovan\n- snat to [adresa:port] - v paketu opoustejicim LAN meni interni IP za verejnou IP\n- masquerade - jako snat ale pri pouziti s DHCP"
+    "odpoved": "dnat to [adresa:port] - urcuje, na jakou interni adresu v LAN ma byt paket smerovan | snat to [adresa] - v paketu opoustejicim LAN meni interni IP za verejnou IP | masquerade - jako snat ale pri pouziti s DHCP"
   },
   {
   "okruh": "Firewall",
   "otazka": "Co presne dela proxy server?",
-  "odpoved": "Slouzi jako zprostredkovatel komunikace mezi interni siti a vnejsi siti v kontextu firewallu\n- Jinak slouzi jako prostrednik (middleman) mezi klientem a cilovym serverem"
+  "odpoved": "Slouzi jako zprostredkovatel komunikace mezi interni siti a vnejsi siti v kontextu firewallu. Jinak slouzi jako prostrednik (middleman) mezi klientem a cilovym serverem"
   },
   {
     "okruh": "Firewall",
     "otazka": "Co je to politika v nftables, jakých může nabývat hodnot?",
-    "odpoved": "- Politika určuje výchozí akci pro pakety, které neodpovídají žádnuto pravidlu\n- Možné hodnoty:\n  * accept - povolí komunikaci\n  * drop - zamítne komunikaci"
+    "odpoved": "Politika určuje výchozí akci pro pakety, které neodpovídají žádnému pravidlu ||| Možné hodnoty: accept - povolí komunikaci | drop - zamítne komunikaci"
   },
   {
     "okruh": "Firewall",
@@ -562,7 +562,7 @@
   {
     "okruh": "Firewall",
     "otazka": "Co je to hook v nftables?",
-    "odpoved": "Hooky slouží k:\n- zachycení síťové komunikace a následnému zpracování pomocí pravidel"
+    "odpoved": "Hooky slouží k: zachycení síťové komunikace a následnému zpracování pomocí pravidel"
   },
   {
     "okruh": "Apache",
@@ -571,53 +571,53 @@
   },
   {
     "okruh": "Apache",
-    "otazka": "Jak se v HTTP uchovava stav stranky pri rechodu mezi strankami?",
+    "otazka": "Jak se v HTTP uchovava stav stranky pri prechodu mezi strankami?",
     "odpoved": "Cookies, Session storage, Local storage"
   },
   {
     "okruh": "Apache",
     "otazka": "Jake jsou verze HTTP protokolu?",
-    "odpoved": "<b>0.9</b>, <b>1.0</b>, <b>1.1</b>, <b>2.0</b>, <b>3.0</b>"
+    "odpoved": "0.9, 1.0, 1.1, 2, 3"
   },
   {
     "okruh": "Apache",
     "otazka": "Jake protokoly nizsi vrstvy pouzivaji jednotlive verze HTTP?",
-    "odpoved": "HTTP/0.9,1.0,1.1 - TCP - data prenasi jako text - MIME, HTTP/2.0 - TCP - data prenasi binarne - rychlejsi, HTTP/3.0 - podpora UDP pomoci QUIC"
+    "odpoved": "HTTP/0.9,1.0,1.1 - TCP | HTTP/2 - TCP | HTTP/3 - nadstavba UDP - QUIC"
   },
   {
     "okruh": "Apache",
     "otazka": "Jakym zpusobem prenasi data jednotlive verze HTTP?",
-    "odpoved": "HTTP/1 - data prenasi jako text - MIME (TCP), HTTP/2 - data prenasi binarne (TCP), HTTP/3 - data prenasi binarne pomoci QUIC (UDP nadstavba)"
+    "odpoved": "HTTP/0.9 - data přenáší jako text (bez MIME) | HTTP/1.0,1.1 - data prenasi jako text ve formátu MIME | HTTP/2 - data prenasi binarne | HTTP/3 - data prenasi binarne pomoci QUIC"
   },
   {
     "okruh": "Apache",
     "otazka": "Jaky je rozdil mezi SSL a TLS?",
-    "odpoved": "SSL - starsi, ne tolik zabezpecene sifrovani, nepouziva se. TLS - novejsi, pouziva se, bezpecnejsi sifrovani"
+    "odpoved": "SSL - starší, horší zabezpečené šifrování, nepoužívaný | TLS - novější, bezpečnější šifrování, používaný"
   },
   {
     "okruh": "Apache",
     "otazka": "Z jakych casti se sklada URL?",
-    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj\n| | | | |\nmetoda adresa port dokument query_string"
+    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj ||| protokol://adresa:port/dokument?query_string"
   },
   {
     "okruh": "Apache",
     "otazka": "Vypiste stavove kody HTTP",
-    "odpoved": "1xx - info, 2xx - uspech, 3xx - redirect, 4xx - chyba klienta, 5xx - chyba serveru"
+    "odpoved": "1xx - info, 2xx - uspech, 3xx - přesměrování, 4xx - chyba klienta, 5xx - chyba serveru"
   },
   {
     "okruh": "Apache",
     "otazka": "Popiste metody HTTP pro ziskavani a odesilani dat na server",
-    "odpoved": "<b>GET</b> - klient posle GET na server pro ziskani dat, <b>POST</b> - klient posle POST na server pro odeslani dat, <b>HEAD</b> - ziskava info z hlavicky"
+    "odpoved": "GET - klient posle GET na server pro ziskani dat | POST - klient posle POST na server pro odeslani dat | HEAD - ziskani info z hlavicky"
   },
   {
     "okruh": "Apache",
     "otazka": "Jakou HTTP metodou zjistite podporovane HTTP metody?",
-    "odpoved": "<b>OPTIONS</b>"
+    "odpoved": "OPTIONS"
   },
   {
     "okruh": "Apache",
     "otazka": "Co je trasovani, jakou pouziva metodu HTTP?",
-    "odpoved": "vraci kopii req pozadavku, pro developery, <b>TRACE</b>"
+    "odpoved": "vraci kopii req pozadavku - pro developery | TRACE"
   },
   {
     "okruh": "Apache",
