@@ -948,6 +948,156 @@
     "okruh": "RIP",
     "otazka": "Na jakou adresu posílá RIPv2 routovací informace",
     "odpoved": "Na multicastovou IP adresu 224.0.0.9"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vysvětlete, k čemu slouží v transport layer multiplexování.",
+    "odpoved": "Slouží k tomu, aby více aplikačních procesů mohlo současně využívat jedno síťové spojení."
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Popište rozdělení portů u transport layer.",
+    "odpoved": "0–1023 = privilegované porty | 1024–49151 = registrované porty, 49152–65535 = privátní porty"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Jaké typy portů se v transport layer používají pro odchozí spojení?",
+    "odpoved": "Privátní porty (49152–65535)"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Co znamená výraz stavový a nestavový protokol?",
+    "odpoved": "Stavový protokol uchovává informace o stavu spojení (např. TCP) | Nestavový neuchovává informace o stavu spojení (např. UDP)"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Jaké jsou vlastnosti protokolu TCP?",
+    "odpoved": "Stavový, spojovaný a spolehlivý"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vyjmenujte položky záhlaví TCP segmentu.",
+    "odpoved": "zdrojový port, cílový port, pořadové číslo odesílaného bajtu, pořadové číslo přijímaného bajtu, rezerva, příznaky, offset fragmentu, délka okna, kontrolní součet, ukazatel naléhavých data, výplň, data"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vyjmenujte položky záhlaví UDP datagramu.",
+    "odpoved": "zdrojový port, cílový port, délka, kontrolní součet"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Nakreslete proces navázání a ukončení spojení u TCP protokolu.",
+    "odpoved": "Navázání: SYN ➡ SYN,ACK ➡ ACK | Ukončení: FIN ➡ FIN,ACK ➡ ACK"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Popište příznaky používané v TCP segmentech.",
+    "odpoved": "SYN = navázání spojení | ACK = potvrzení spojení | URG = naléhavá (urgentní) data | RST = okamžité ukončení spojení | FIN = žádost o ukončení spojení"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Se kterými vrstvami ISO/OSI sousedí transport layer?",
+    "odpoved": "Síťová a relační (Network a Session)"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaký je rozdíl mezi autorizací a autentizací uživatele?",
+    "odpoved": "Autentizace = kontrola, zda se přihlašuje správný uživatel | Autorizace = kontrola, zda má uživatel přístup k danému zdroji."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jak funguje symetrická šifra?",
+    "odpoved": "Obě strany komunikace mají jeden společný (tajný) klíč, pomocí kterého šifrují a dešifrují zprávy."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké jsou výhody asymetrické šifry?",
+    "odpoved": "Veřejný klíč může klient sdílet s kýmkoli a nikdo se stejně nedostane k datům – soukromý klíč má jen klient."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké jsou nevýhody asymetrické šifry? (stačí 2)",
+    "odpoved": "pomalejší, náročnější na výpočetní výkon a vyžaduje správu dvojic klíčů"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jmenujte příklad symetrické šifry.",
+    "odpoved": "AES"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jmenujte příklad hashovací funkce. (stačí 1)",
+    "odpoved": "MD5, SHA-256, bcrypt"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké dvě věci musí zajistit elektronický podpis?",
+    "odpoved": "Ověření identity odesílatele a zajištění integrity dat (že data nebyla po cestě změněna)."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jakým klíčem se šifruje hash v elektronickém podpisu?",
+    "odpoved": "Soukromým klíčem odesílatele"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Co obsahuje zpráva Server Hello v TLS handshaku?",
+    "odpoved": "náhodně generovaný řetězec a veřejnou část certifikátu"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Co je potřeba k vygenerování Master Key v TLS handshaku?",
+    "odpoved": "Pre-master key, náhodně generované řetězce od klienta i serveru"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jaké prvky patří do strukturované kabeláže?",
+    "odpoved": "patch panely, patch kabely, horizontální kabely, telekomunikační zásuvky, data rack"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jakými zásadami se řídíme při návrhu strukturované kabeláže? (z odpovědí si jich jenom vyber pár)",
+    "odpoved": "předem definované požadavky (počet uživatelů, jejich umíštění atd.) | ethernetový kabel nesmí být delší než 100 metrů a nesmí být víckrát jak 2x ohnutý | dodržování standardů a norem | správný výběr kabelů a komponent | správné umíštění zařízení | správné rozložení kabelů | budoucí škálovatelnost"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Vypište typy provedení TP kabelů s krátkým popisem.",
+    "odpoved": "UTP - nestíněný, pouze s páry v plastovém plášti | FTP - celý kabel stíněný fólií, jednotlivé páry nestíněné | STP - každý pár samostatně stíněný fólií + celý kabel opletený"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Co říká o TP kabelu náhradní schéma?",
+    "odpoved": "Říká, jak se v realitě chová a ukazuje vlastnosti kabelu."
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Která kategorie splňuje tyto požadavky: šířka pásma 100 MHz, rychlost 1 Gb/s?",
+    "odpoved": "5e"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Vypište typy optických vlákien.",
+    "odpoved": "jednovidové (single mode), mnohovidové (multimode)"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Z jakých částí se skládá optické vlákno?",
+    "odpoved": "jádro, plášť a obal"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jak se šíří signál v optickém vlákně (Snellův zákon)?",
+    "odpoved": "pomocí úplného odrazu"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jakými způsoby můžeme spojovat nebo zakončovat optická vlákna?",
+    "odpoved": "Sváření (fúze), konektor, mechanické spojování, lepení"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Který ze způsobů zakončení optických vlákien přináší nejvíce výhod?",
+    "odpoved": "sváření (fúze)"
   }
 ]
 
