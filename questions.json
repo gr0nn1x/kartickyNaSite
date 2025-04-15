@@ -977,7 +977,7 @@
   {
     "okruh": "Transportní vrstva",
     "otazka": "Vyjmenujte položky záhlaví TCP segmentu.",
-    "odpoved": "zdrojový port, cílový port, pořadové číslo odesílaného bajtu, pořadové číslo přijímaného bajtu, rezerva, příznaky, offset fragmentu, délka okna, kontrolní součet, ukazatel naléhavých data, výplň, data"
+    "odpoved": "zdrojový port, cílový port, pořadové číslo odesílaného bajtu, pořadové číslo přijímaného bajtu, délka hlavičky, rezerva, příznaky, délka okna, kontrolní součet, ukazatel naléhavých data, výplň, data"
   },
   {
     "okruh": "Transportní vrstva",
