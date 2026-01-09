@@ -6,248 +6,1104 @@ Tady to je ->[Karticky na site](https://karticky-na-site.vercel.app/)
 
 [
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Konvexní funkce na intervalu I",
-    "odpoved": "Pro všechna x1, x2 z I leží graf funkce POD nebo NA úsečce spojující body [x1, f(x1)] a [x2, f(x2)]. Pomocí derivace: f''(x) >= 0."
+    "okruh": "Routovani",
+    "otazka": "V jakem souboru v debianu najdeme nastaveni rekurzivnich DNS serveru?",
+    "odpoved": "/etc/resolv.conf"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Konkávní funkce na intervalu I",
-    "odpoved": "Pro všechna x1, x2 z I leží graf funkce NAD nebo NA úsečce spojující body [x1, f(x1)] a [x2, f(x2)]. Pomocí derivace: f''(x) <= 0."
+    "okruh": "Routovani",
+    "otazka": "Kolik bitu ma celkem adresa IPv6?",
+    "odpoved": "128 bitu"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Inflexní bod",
-    "odpoved": "Bod, ve kterém je funkce spojitá a mění se v něm charakter funkce z konvexní na konkávní (nebo naopak)."
+    "okruh": "Routovani",
+    "otazka": "Jaky je globalni prefix linkove-lokalni adresy v IPv6?",
+    "odpoved": "fe80:: /10"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Sudá funkce",
-    "odpoved": "Pro všechna x z D(f) platí f(-x) = f(x). Graf je souměrný podle osy y."
+    "okruh": "Routovani",
+    "otazka": "Jaky je globalni prefix multicast adresy v IPv6?",
+    "odpoved": "ff00:: /8"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Lichá funkce",
-    "odpoved": "Pro všechna x z D(f) platí f(-x) = -f(x). Graf je souměrný podle počátku."
+    "okruh": "Routovani",
+    "otazka": "V jakem souboru v debianu zapnout funkci docasneho routovani?",
+    "odpoved": "/proc/sys/net/ipv4/ip_forward"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Rostoucí funkce na intervalu",
-    "odpoved": "Pro všechna x1 < x2 platí f(x1) < f(x2)."
+    "okruh": "Routovani",
+    "otazka": "Co znamena direktiva auto v konfiguraci sitoveho rozhrani v Linuxu?",
+    "odpoved": "rozhrani se zapne automaticky pri startu systemu"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Klesající funkce na intervalu",
-    "odpoved": "Pro všechna x1 < x2 platí f(x1) > f(x2)."
+    "okruh": "Routovani",
+    "otazka": "Co znamena direktiva allow-hotplug v konfiguraci sit. rozhrani v Linuxu?",
+    "odpoved": "rozhrani se zapne pri zapojeni sitoveho kabelu"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Prostá funkce",
-    "odpoved": "Pro každá dvě různá x1, x2 platí f(x1) se nerovná f(x2)."
+    "okruh": "Routovani",
+    "otazka": "Co se nachazi v souboru /etc/hosts?",
+    "odpoved": "ip adresa a jmenny nazev"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Inverzní funkce",
-    "odpoved": "Funkce f^(-1), pro kterou platí y = f(x) <=> x = f^(-1)(y). Existuje pouze k prosté funkci."
+    "okruh": "Routovani",
+    "otazka": "Podle ceho pozname v IPv6 Nespecifikovanou adresu?",
+    "odpoved": "ma same nuly"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Definice: Hladká funkce",
-    "odpoved": "Funkce, která má na daném intervalu spojitou derivaci."
+    "okruh": "Routovani",
+    "otazka": "O cem rozhoduje nsswitch.conf?",
+    "odpoved": "rozhoduje, co bude mit vetsi prioritu, jestli DNS nebo /etc/hosts"
   },
   {
-    "okruh": "Základy a Relace",
-    "otazka": "Rozdíl mezi binární relací a zobrazením",
-    "odpoved": "Relace je libovolná podmnožina A x B. Zobrazení je relace, kde každému x odpovídá právě jedno y."
+    "okruh": "Routovani",
+    "otazka": "Kde zapnout permanentni routovani?",
+    "odpoved": "/etc/sysctl.conf"
   },
   {
-    "okruh": "Limity",
-    "otazka": "Definice: Limita funkce pro x -> nekonečno",
-    "odpoved": "Lim f(x) = L, jestliže pro každé epsilon > 0 existuje K, že pro všechna x > K je |f(x) - L| < epsilon."
+    "okruh": "Routovani",
+    "otazka": "Jaky je rozdil mezi Ipconfig a Ifconfig?",
+    "odpoved": "oboje na zobrazeni konfigurace sitovych rozhrani | IPconfig - Windows | Ifconfig - Linux"
   },
   {
-    "okruh": "Limity",
-    "otazka": "Definice: Vlastní limita funkce v bodě a",
-    "odpoved": "Lim f(x) = L, jestliže pro každé epsilon > 0 existuje delta > 0, že pro 0 < |x-a| < delta je |f(x) - L| < epsilon."
+    "okruh": "DHCP",
+    "otazka": "Co znamena, ze je DHCP server autoritativni?",
+    "odpoved": "kdyz klient posle pozadavek a DHCP server ho nema v databazi, tak ho zamitne"
   },
   {
-    "okruh": "Derivace",
-    "otazka": "Definice: Jednostranná derivace v bodě a zprava",
-    "odpoved": "Limita podílu (f(x)-f(a))/(x-a) pro x blížící se k a zprava (x -> a+)."
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi DHCP Discover?",
+    "odpoved": "K navazani spojeni mezi klientem a serverem - posila klient a rika, ze v siti existuje"
   },
   {
-    "okruh": "Derivace",
-    "otazka": "Geometrický význam 1. derivace",
-    "odpoved": "Směrnice tečny ke grafu funkce v daném bodě."
+    "okruh": "DHCP",
+    "otazka": "Jake informace obsahuje DHCP Offer?",
+    "odpoved": "nabizena IP adresa, maska, IP serveru, MAC klienta, dobu zapujcky"
   },
   {
-    "okruh": "Derivace",
-    "otazka": "Pojem: Tečna ke grafu funkce",
-    "odpoved": "Přímka, která nejlépe aproximuje funkci v okolí bodu dotyku. Její směrnice je rovna derivaci v bodě."
+    "okruh": "DHCP",
+    "otazka": "Jakym typem vysilani se posila DHCP Request?",
+    "odpoved": "broadcastem od klienta"
   },
   {
-    "okruh": "Derivace",
-    "otazka": "Pojem: Normála ke grafu funkce",
-    "odpoved": "Přímka kolmá na tečnu v bodě dotyku."
+    "okruh": "DHCP",
+    "otazka": "Kdo a kdy posila zpravu DHCP Decline?",
+    "odpoved": "klient, pokud je adresa v siti uz pouzita, tak zamitne DHCP Offer"
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Definice: Primitivní funkce F k f na I",
-    "odpoved": "Funkce F, pro kterou platí F'(x) = f(x) pro všechna x z I."
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP Release?",
+    "odpoved": "Klient rika serveru, ze uz danou IP nepotrebuje a vraci ji zpatky"
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Definice: Neurčitý integrál",
-    "odpoved": "Množina všech primitivních funkcí k funkci f. Zápis: Int f(x) dx = F(x) + C."
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP Inform?",
+    "odpoved": "Klient rika serveru, ze uz IP adresu ma, ale chce dalsi konf. informace"
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Definice: Lokální maximum v bodě a",
-    "odpoved": "Existuje okolí U(a), že pro všechna x z U(a) platí f(x) <= f(a)."
+    "okruh": "DHCP",
+    "otazka": "Co je DHCP NAK?",
+    "odpoved": "Server zamita request klienta pokud pred tim neprobehla zadna komunikace a klient nemuze danou adresu dostat"
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Věta: Souvislost 2. derivace a konvexnosti",
-    "odpoved": "Je-li f''(x) > 0 na I, je f ryze konvexní. Je-li f''(x) < 0 na I, je f ryze konkávní."
+    "okruh": "DHCP",
+    "otazka": "K cemu slouzi DHCP Relay?",
+    "odpoved": "Aby klient mohl komunikovat se serverem i pres router"
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Věta: Souvislost 2. derivace a lokálního extrému ve stacionárním bodě",
-    "odpoved": "Je-li f'(a)=0 a f''(a) > 0 -> lokální MINIMUM. Je-li f'(a)=0 a f''(a) < 0 -> lokální MAXIMUM."
+    "okruh": "DHCP",
+    "otazka": "V jakém časovém okamžiku žádá klient obvykle o obnovu IP adresy?",
+    "odpoved": "V polovině doby zapůjčky"
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Věta: Vztah 1. derivace a monotonie",
-    "odpoved": "f'(x) > 0 -> rostoucí. f'(x) < 0 -> klesající."
+    "okruh": "DHCP",
+    "otazka": "Jaký je rozdíl mezi DHCPACK a DHCPNAK?",
+    "odpoved": "DHCPACK - server přiděluje klientovi IP, masku a rozšiřující info. | DHCPNAK - server zamítá přidělení IP, masky a rozšiřujícího info klientovi."
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Vzorec: Integrace per-partes",
-    "odpoved": "Int u(x)*v'(x) dx = u(x)*v(x) - Int u'(x)*v(x) dx."
+    "okruh": "DHCP",
+    "otazka": "V jakém případě potřebujeme službu DHCP Relay?",
+    "odpoved": "Když budeme chtít komunikovat s DHCP serverem, který je v jiném subnetu přes router."
   },
   {
-    "okruh": "Limity",
-    "otazka": "Pravidlo: L'Hospitalovo pravidlo a jeho předpoklady",
-    "odpoved": "Platí pro limity typu '0/0' nebo 'nekonečno/nekonečno'. Limita podílu funkcí se rovná limitě podílu jejich derivací."
+    "okruh": "DHCP",
+    "otazka": "Co je to obor adres (scope), jaké obsahuje informace?",
+    "odpoved": "Scope je část v konfiguračním souboru, kde se nachází hlavní údaje jako: pool (rozsah IP adres), maska, gateway, doména, DNS servery"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Věta: O hodnotách spojité funkce bez nulových bodů",
-    "odpoved": "Je-li f spojitá na intervalu I a nemá zde nulový bod, pak na celém I nemění znaménko (je stále kladná nebo stále záporná)."
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží Multicast scope?",
+    "odpoved": "Je to scope, ale pro multicastové adresy."
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Důkaz: Věta o hodnotách spojité fce bez nulových bodů",
-    "odpoved": "Sporem: Kdyby měnila znaménko (byla + i -), musela by podle Bolzanovy věty nabývat hodnoty 0, což je spor s předpokladem."
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží superscope?",
+    "odpoved": "Superscope obsahuje více scopů. Používá se když máme více rozhraní a na každém se přidělují jiné IP. Pak potřebujeme více scopů = superscope."
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Podmínka: Nutná podmínka lokálního extrému",
-    "odpoved": "Má-li f v bodě a lokální extrém a existuje derivace, pak f'(a) = 0."
+    "okruh": "DHCP",
+    "otazka": "K čemu slouží v DHCP rezervace IP adresy, výjimky a filtry?",
+    "odpoved": "Rezervace - přidělí zařízení konkrétní IP adresu na konkrétní MAC adresu. Výjimky - blokují určité IP v rozsahu poolu, aby je nepřiděloval. Filtry - povolují/omezují přístup k DHCP přes MAC adresy."
   },
   {
-    "okruh": "Extrémy a Průběh",
-    "otazka": "Podmínka: Postačující podmínka lokálního extrému",
-    "odpoved": "Změna znaménka 1. derivace v bodě (z + na - je maximum, z - na + je minimum) NEBO nenulová 2. derivace."
+    "okruh": "DNS",
+    "otazka": "Jake 2 ulohy plni rekurzivni DNS server?",
+    "odpoved": "rekurzivni hledani, dotazy uklada do cache"
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Metoda: Princip substituce (1. druh)",
-    "odpoved": "Zavedeme t = g(x), dt = g'(x)dx. Integrál převedeme na proměnnou t."
+    "okruh": "DNS",
+    "otazka": "Jake jsou zakladni urovne systemu DNS?",
+    "odpoved": ". - korenovy server, .cz - TLD (Top level domain), spsmb - Second level domain"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Metoda: Bolzanova věta a půlení intervalů",
-    "odpoved": "Pokud je f spojitá na <a,b> a f(a)*f(b) < 0, existuje kořen. Interval dělíme napůl a vybíráme tu část, kde se liší znaménka krajních bodů."
+    "okruh": "DNS",
+    "otazka": "Jaky je rozdil mezi primarnim a sekundarnim DNS serverem?",
+    "odpoved": "Primarni je ten hlavni. V případě zátěže nebo selhání primárního serveru zacne fungovat sekundarni, ktery je takovy backup."
+  },
+   {
+    "okruh": "DNS",
+    "otazka": "Napište příklad A záznamu v DNS. K čemu slouží?",
+    "odpoved": "Příklad: ns1 IN A 10.0.0.1 | Slouží k překladu jmenného názvu na IP adresu."
   },
   {
-    "okruh": "Derivace",
-    "otazka": "Příklad: Tečna bez směrnicového tvaru",
-    "odpoved": "Funkce y = 3. odmocnina z x v bodě 0. Tečnou je osa y (x=0), derivace je nevlastní."
+    "okruh": "DNS",
+    "otazka": "K čemu slouží PTR záznam?",
+    "odpoved": "Překládá IP adresu zpět na jmenný název."
   },
   {
-    "okruh": "Polynomy a řady",
-    "otazka": "Vztah: Derivace Taylorova polynomu a funkce",
-    "odpoved": "k-tá derivace Taylorova polynomu v bodě středu je rovna k-té derivaci funkce f v tomtéž bodě."
+    "okruh": "DNS",
+    "otazka": "Jaka je domena zpetne zony pro IPv4?",
+    "odpoved": "ip-addr.arpa"
   },
   {
-    "okruh": "Polynomy a řady",
-    "otazka": "Vlastnost: Maclaurinův polynom liché funkce",
-    "odpoved": "Obsahuje pouze liché mocniny x (x, x^3, x^5...)."
+    "okruh": "DNS",
+    "otazka": "Jaka je domena zpetne zony pro IPv6?",
+    "odpoved": "ip6.arpa"
   },
   {
-    "okruh": "Polynomy a řady",
-    "otazka": "Vlastnost: Maclaurinův polynom sudé funkce",
-    "odpoved": "Obsahuje pouze sudé mocniny x (1, x^2, x^4...)."
+    "okruh": "DNS",
+    "otazka": "Jaký je rozdíl mezi dopřednou a zpětnou zónou?",
+    "odpoved": "Dopředná zóna - překládá jmenné názvy na IP adresy | Zpětná zóna - překládá IP adresy na jmenné názvy"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Příklad: Lichá funkce, konkávní na (-a, 0). Jaká je na (0, a)?",
-    "odpoved": "Konvexní. (Lichost převrací hodnoty i 'zakřivení')."
+    "okruh": "DNS",
+    "otazka": "Jake udaje obsahuje zaznam MX v DNS?",
+    "odpoved": "Server pro elektronickou postu | domena IN MX priorita mail_server"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Skládání funkcí: f sudá, g lichá. Jaká je f složeno s g?",
-    "odpoved": "SUDÁ. (f 'požere' znaménko z g)."
+    "okruh": "DNS",
+    "otazka": "Jaky je logicky pocet korenovych DNS serveru?",
+    "odpoved": "13 (A-M)"
   },
   {
-    "okruh": "Vlastnosti funkcí",
-    "otazka": "Skládání funkcí: f rostoucí, g klesající. Jaká je f složeno s g?",
-    "odpoved": "KLESAJÍCÍ."
+    "okruh": "DNS",
+    "otazka": "Jake udaje obsahuje zaznam SOA?",
+    "odpoved": "udava zacatek zony, 1. domena | 2. primarni ns | 3. email spravce | 4. serial | 5. refresh | 6. retry | 7. expire | 8. TTL"
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Integrály: Kolik existuje primitivních funkcí?",
-    "odpoved": "Nekonečně mnoho, liší se o aditivní konstantu C."
+    "okruh": "DNS",
+    "otazka": "Co udava NS zaznam?",
+    "odpoved": "Určuje, které jmenné servery (name servery) jsou autoritativní pro danou DNS zónu."
   },
   {
-    "okruh": "Integrály",
-    "otazka": "Integrály: Má-li f lichou primitivní funkci F, jaká je f?",
-    "odpoved": "SUDÁ. (Derivace liché funkce je sudá)."
+    "okruh": "DNS",
+    "otazka": "Co znamena, ze je DNS server autoritativni?",
+    "odpoved": "rika, jak ma domena vypadat, jake ma obsahovat informace"
   },
   {
-    "okruh": "Základy a Relace",
-    "otazka": "Grafika: Jak poznat zobrazení z grafu relace?",
-    "odpoved": "Test svislé přímky: Žádná svislá přímka nesmí protnout graf více než jednou."
+    "okruh": "DNS",
+    "otazka": "Jake servery jsou v DNS pojmenovany pismeny abecedy? Jaka pismena se pouzivaji?",
+    "odpoved": "korenove (root) - A-M"
   },
   {
-    "okruh": "Logika",
-    "otazka": "Logika: Negace výroku 'Pro každou funkci platí...'",
-    "odpoved": "'Existuje alespoň jedna funkce, pro kterou neplatí...'"
+    "okruh": "DNS",
+    "otazka": "Jak funguje v DNS rekuzivni vyhledavani?",
+    "odpoved": "vyhledavani uklada do cache → pri dalsim vyhledavani to bude rychlejsi"
   },
   {
-    "okruh": "Logika",
-    "otazka": "Logika: Negace výroku A => B",
-    "odpoved": "A platí a zároveň B neplatí (A & non B)."
+    "okruh": "DNS",
+    "otazka": "Jakym nastrojem ve Windows overime funkcnost DNS serveru?",
+    "odpoved": "nslookup"
   },
   {
-    "okruh": "Logika",
-    "otazka": "Logika: Obměna výroku A => B",
-    "odpoved": "non B => non A (má stejnou pravdivostní hodnotu)."
+  "okruh": "DNS",
+  "otazka": "Jake protokoly nizsi vrstvy a proc pouziva DNS server?",
+  "odpoved": "UDP (User Datagram Protocol) – Používá se pro většinu DNS dotazů, protože je rychlý a nevyžaduje navázání spojení. DNS dotazy jsou obvykle malé a UDP je efektivní pro přenos těchto informací. ||| TCP (Transmission Control Protocol) – Používá se v případě, že odpověď na DNS dotaz je příliš velká pro UDP (například při přenosu zónových souborů nebo při přetížení serveru). TCP zajišťuje spolehlivost a zaručuje doručení dat."
   },
   {
-    "okruh": "Příklady",
-    "otazka": "Příklad: Je y = ln|x| sudá nebo lichá?",
-    "odpoved": "SUDÁ."
+    "okruh": "Windows Server",
+    "otazka": "Jaké jsou možnosti ovládání Windows Serveru?",
+    "odpoved": "GUI, Textový režim (PowerShell, cmd, vbscript, sconfig), Remote (RSAT - Remote Server Administration Toolkit)"
   },
   {
-    "okruh": "Příklady",
-    "otazka": "Příklad: Monotonie x^4 - x^2 na (0, 1/sqrt(2))",
-    "odpoved": "KLESAJÍCÍ. (Derivace je zde záporná)."
+    "okruh": "Windows Server",
+    "otazka": "Co musíme zvážit před pořízením a instalací Windows Serveru?",
+    "odpoved": "Kolik mám peněz (je placený), Jaký mám HW (náročnost závisí na GUI nebo text), Počet uživatelů v síti, Potřebné funkcionality serveru (výběr edice)"
   },
   {
-    "okruh": "Příklady",
-    "otazka": "Příklad: Primitivní funkce k x^3 - sin(x)",
-    "odpoved": "x^4/4 + cos(x) + C."
+    "okruh": "Windows Server",
+    "otazka": "Co je to jádro (kernel) systému?",
+    "odpoved": "Načítá se jako první do paměti, přebírá kontrolu nad HW, řídí přístup k CPU, obsahuje ovladače a zajišťuje komunikaci mezi hardwarem a softwarem"
   },
   {
-    "okruh": "Příklady",
-    "otazka": "Příklad: Limita ln(x)/x^2 pro x -> nekonečno",
-    "odpoved": "0 (L'Hospital 1/x lomeno 2x)."
+    "okruh": "Windows Server",
+    "otazka": "Co je to HAL?",
+    "odpoved": "Hardware Abstraction Layer - abstraktní vrstva mezi jádrem a HW, umožňuje kompatibilitu softwaru napříč různými verzemi HW"
   },
   {
-    "okruh": "Příklady",
-    "otazka": "Příklad: Rovnice tečny y=tan(x) v bodě 0",
-    "odpoved": "y = x."
+    "okruh": "Windows Server",
+    "otazka": "Jakou zásadní výhodu přináší použití HAL?",
+    "odpoved": "Umožňuje Windows Serveru běžet na různých typech HW"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaké edice nabízí Windows Server?",
+    "odpoved": "Essentials, Standard, Datacenter"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to CAL?",
+    "odpoved": "Client Access Licence - 1 uživatel nebo 1 zařízení vyžaduje licenci | Používá se u edic Standard a Datacenter"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaké typy CAL lze použít s Windows Server?",
+    "odpoved": "User CAL - licence na uživatele, Device CAL - licence na zařízení"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Jaký je rozdíl mezi rolí, službou a funkcí Windows Serveru?",
+    "odpoved": "Funkce - rozšiřující část role, Role - základní funkcionalita (např. DNS, DHCP), Služba - procesy běžící na pozadí (v Linuxu daemoni)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co to jsou služby ve Windows Serveru?",
+    "odpoved": "Procesy běžící na pozadí (v Linuxu daemoni)"
+  },
+  {
+    "okruh": "Windows Server",
+    "otazka": "Co je to Windows Server a k čemu slouží?",
+    "odpoved": "Operační systém od Microsoftu, slouží k provozování síťových služeb (DHCP, DNS, AD, GPO, webserver, Exchange server, atd.)"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Pri jake komunikaci pouziva Samba API NetBIOS",
+    "odpoved": "pri neprime komunikaci"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "V jakych rolich muze byt Samba konfigurovana?",
+    "odpoved": "Standalone server, Domain member, Domain controller"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jake jsou zakladni casti hlavniho konf. souboru Samby?",
+    "odpoved": "[global], [homes], [printers], [nazev]"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi NBNS a jak se nazyva v OS Windows?",
+    "odpoved": "Je to jmenna sluzba a slouzi podobne jako DNS | Ve Windows - WINS"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "V jakem pripade pouziva Samba system DNS?",
+    "odpoved": "pokud je komunikace po siti prima (port 445)"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi v konfiguraci samby polozka create mask a directory mask",
+    "odpoved": "create mask - pristupova prava nove vytvorenych souboru | directory mask - pristupova prava nove vytvorenych slozek"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co predstavuje v konfiguraci Samby polozka security?",
+    "odpoved": "Jakym zpusobem se overuje uzivatel k Samba serveru"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Kdy pouzijeme v konfiguraci Samby polozku browseable?",
+    "odpoved": "Pokud chceme, aby slozka sla zobrazit"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jake daemony pouziva Samba?",
+    "odpoved": "smbd -  pro sdileni souboru a tiskaren | nmbd - pro preklad jmennych nazvu na IP adresy | winbindd - pro spolupraci s WIN NT4"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co dela testparm?",
+    "odpoved": "Zkontroluje syntaxe hlavního konfiguračního souboru smb.conf"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Vypiste typy komunikace protokolu SMB/CIFS a priradte protokoly a porty",
+    "odpoved": "Prima - pres port 445 a DNS preklada jmenne nazvy TCP i UDP ||| Neprima - NetBIOS API | jmenné služby (něco jako DNS) - 137 TCP i UDP | nestavove - 138 UDP | stavove - 139 TCP"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Vypiste zakladni nastroje pro praci se sambou + popis",
+    "odpoved": "testparm - zkontroluje syntaxe hlavního konfiguračního souboru smb.conf | smbpasswd <prikaz> -> -a (pridani uzivatelu) -x (odstraneni uzivatelu) -d (zakazani uzivatelu) -e (povoleni uzivatelu) | pdbedit -L - vypise seznam uzivatelu samby | smbstatus - stav samba serveru | smbclient - prace se sdilenymi slozkami"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "K cemu slouzi v konfiguraci Samby polozka map to guest?",
+    "odpoved": "akce pri zadani spatnych prihlasovacich udaju"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jakou direktivou v Sambe priradime sdilene slozce pristup konkretnim uzivatelum?",
+    "odpoved": "valid users"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Co dela prikaz root preexec v konfiguraci Samby?",
+    "odpoved": "nez se povoli pristup uzivateli, se z roota spusti nami zadany prikaz"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jakymi nastavenimi lze v konfiguraci Samby omezit moznost zapisu do sdilene slozky?",
+    "odpoved": "writeable = no | writable = no | read only = yes"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jak omezite v konfiguraci Samby rozhrani, na kterych Samba nasloucha klientum?",
+    "odpoved": "interfaces - napiseme konkretni rozhrani | bind interfaces only = yes - rikame, aby naslouchala pouze na techto rozhranich"
+  },
+  {
+    "okruh": "Samba",
+    "otazka": "Jak pridame do Samby, ktera neni v domene, noveho uzivatele?",
+    "odpoved": "useradd -s /bin/nologin -U test -G users -> passwd test -> smbpasswd -a test -> smbpasswd -e test"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Jaká role používá globální katalog?",
+    "odpoved": "Infrastructure master"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "K čemu slouží role Operation Naming Master?",
+    "odpoved": "K přidávání a odebírání domén v lese"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Z jaké role se generuje SID?",
+    "odpoved": "Z RID masteru"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Jaká role má na starosti AD schéma?",
+    "odpoved": "Schema master"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "K čemu slouží role primary domain controller emulator?",
+    "odpoved": "Zajišťuje kompatibilitu s historickými systémy"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Co znamená zkratka OU v AD ve Windows Serveru? K čemu je tento objekt?",
+    "odpoved": "Organizational Unit; slouží k organizaci a seskupení objektů a systémových politik"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Z čeho se skládá fyzická struktura v AD?",
+    "odpoved": "Site (síť), domain controllery"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Z čeho se skládá logická struktura AD?",
+    "odpoved": "Les, Stromy, OU"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "K čemu slouží v AD SID?",
+    "odpoved": "Security ID - jedinečný identifikátor pro objekty v AD"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "K čemu slouží AD ve Win Serveru? (4 možnosti)",
+    "odpoved": "1. Správa uživatelů, skupin a zařízení | 2. Seskupování objektů | 3. Nasazení GPO | 4. K autentizaci a autorizaci"
+  },
+  {
+    "okruh": "AD",
+    "otazka": "Na čem je AD závislé (bez čeho nejde provozovat)?",
+    "odpoved": "Windows Server, Domain Controller, DNS, Kerberos"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "K čemu slouží WMI filtry v GPO?",
+    "odpoved": "WMI filtry je nástroj, který umožňuje aplikovat GPO pouze na určité typy počítačů podle hardwarových/softwarových charakteristik, např. tiskárny, počítač s Windows 11"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Kam se GPO ukládají?",
+    "odpoved": "C:\\Windows\\SYSVOL\\sysvol\\'domena'\\Policies"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jaké jsou dvě základní politiky a co dělají?",
+    "odpoved": "Default domain policy - výchozí politika, která se aplikuje na doménu | Default domain controller policy - výchozí politika, která se aplikuje pro doménové řadiče"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Kdy použijeme pravidla GPO pro počítač a kdy pro uživatele?",
+    "odpoved": "Pro počítač - aplikace na všechny uživatele PC | Pro uživatele - aplikace na konkrétního uživatele nezávisle na PC"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Co to jsou GPO?",
+    "odpoved": "Systémové politiky pro nastavení vzhledu zařízení až po kompletní nastavení systému"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jak je to s dědičností a pořadím vyhodnocování GPO?",
+    "odpoved": "Dědičnost: Nastavení z vyšších úrovní se dědí na nižší | Pořadí: Priorita podle čísel, menší číslo má větší prioritu"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Co je potřeba pro používání GPO?",
+    "odpoved": "AD, DNS, Windows Server"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Na jaké objekty se mohou GPO vázat?",
+    "odpoved": "Site, Domain, Domain Controller, OU"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jaký je rozdíl mezi nástrojem Group Policy Modeling a Group Policy Results?",
+    "odpoved": "Group Policy Modeling - simulátor pro předpověd aplikování politik | Group Policy Results - ukáže skutečný výsledek aplikace politiky"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "K čemu slouží starter GPO?",
+    "odpoved": "Šablona pro systémové politiky"
+  },
+  {
+    "okruh": "GPO",
+    "otazka": "Jak omezíte použití GPO pouze na konkrétní uživatele a PC uvnitř objektu?",
+    "odpoved": "Pomoci: WMI filtry - filtrování podle hardwarových/softwarových charakteristik, např. tiskárny, počítač s Windows 11 | Security filtry - filtrování podle uživatelských/počítačových skupin AD"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co presne dela firewall?",
+    "odpoved": "Kontroluje a filtruje síťový provoz na základě předem definovaných pravidel. Jeho hlavním účelem je chránit zařízení a sítě před neoprávněným přístupem, útoky, a škodlivým provozem. Rozhoduje, zda povolí nebo zablokuje datové pakety na základě jejich charakteristik, jako je IP adresa, port, protokol nebo obsah."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou zakladni typy firewallu, na jakych ISO/OSI vrstvach pracuji?",
+    "odpoved": "1. Nestavové firewally (stateless) [paketové filtry] = kontroluji IP odesilatele, IP prijemce, zdrojovy port a cilovy port → kvuli temto informacim muzou komunikaci blokovat nebo povolit. Pracuji na 3. (síťové) a 4. (trasnportní) vrstve kvuli portum. | 2. Stavové firewally (stateful) - stejna jako nestavove ale umi posuzovat stav spojeni. Pracuje na 4. (transportní) vrstvě. | 3. Aplikační firewally - systemy, ktere rozumi aplikacni vrstve. Pracuje na 7. (aplikační) vrstve."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "K cemu slouzi NAT, proc vzniknul?",
+    "odpoved": "NAT (Network Address Translation) umožňuje překlad mezi privátními a veřejnými IP adresami, což šetří veřejné IP adresy a umožňuje sdílení jedné veřejné adresy mezi více zařízeními."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou typy NATu?",
+    "odpoved": "1. 1:1 – statická konfigurace 1 veřejné IP na jednu privátní IP | 2. 1:N - mapuje více privátních IP na jednu veřejnou (NAT overload) | 3. N:N – dynamická konfigurace, každé jedné privátní IP je dynamicky přidělená veřejná IP"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake existuji typy hooku v nftables, co presne delaji?",
+    "odpoved": "1. Prerouting – prichozi nat (internet → vnitrni sit) | 2. Postrouting – odchozi nat (vnitrni sit → internet) | 3. Input – prichozi komunikace | 4. Output – odchozi komunikace | 5. Forward – pruchozi komunikace"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou typy retezcu v nftables?",
+    "odpoved": "1. filter - vychozi | 2. nat - provadi natovani | 3. route - meni smerovani paketu"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je priorita nftables, jakych muze nabyvat hodnot?",
+    "odpoved": "určuje pořadí zpracování pravidel v rámci hooku - jako v linuxu: cim mensi cislo, tim vyssi priorita | 1. dstnat: -100 | 2. filter: 0 | 3. srcnat: 100"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake akce v nftables slouzi pro povoleni a zakazani komunikace (kratky popis)?",
+    "odpoved": "accept – povoleni komunikace, drop – zamitnuti komunikace (paket se tise zahodi bez chybove zpravy), reject – jako drop, ale vrací zpět chybovou zprávu"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jaky je rozdil mezi akci jump a goto v nftables?",
+    "odpoved": "Jump – přechází do jiného řetězce a po dokončení pokračuje zpět. | Goto – přechází do jiného řetězce bez návratu zpet."
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Lze v nftables presmerovat komunikaci na jiny port? Jak?",
+    "odpoved": "Ano, pomocí akce dnat: `dnat to [adresa:port]` a redirect: `redirect to [:port]`"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jaka je struktura nftables (casti, pres ktere prochazi komunikace)?",
+    "odpoved": "Tabulky → Retezce → Hooky → Pravidla"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou direktivy pro zdrojove a cilove porty a IP adresy v nftables?",
+    "odpoved": "Porty: sport, dport | IP adresy: saddr, daddr"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jake jsou akce pro NAT v nftables?",
+    "odpoved": "dnat to [adresa:port] - urcuje, na jakou interni adresu v LAN ma byt paket smerovan | snat to [adresa] - v paketu opoustejicim LAN meni interni IP za verejnou IP | masquerade - jako snat ale pri pouziti s DHCP"
+  },
+  {
+  "okruh": "Firewall",
+  "otazka": "Co presne dela proxy server?",
+  "odpoved": "Slouzi jako zprostredkovatel komunikace mezi interni siti a vnejsi siti v kontextu firewallu. Jinak slouzi jako prostrednik (middleman) mezi klientem a cilovym serverem"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to politika v nftables, jakých může nabývat hodnot?",
+    "odpoved": "Politika určuje výchozí akci pro pakety, které neodpovídají žádnému pravidlu ||| Možné hodnoty: accept - povolí komunikaci | drop - zamítne komunikaci"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Jakou direktivou se sleduje stav spojení v nftables?",
+    "odpoved": "ct state"
+  },
+  {
+    "okruh": "Firewall",
+    "otazka": "Co je to hook v nftables?",
+    "odpoved": "Hooky slouží k: zachycení síťové komunikace a následnému zpracování pomocí pravidel"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky typ sluzby dle postaveni uzlu poskytuje HTTP?",
+    "odpoved": "Komunikace klient → Server"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jak se v HTTP uchovava stav stranky pri prechodu mezi strankami?",
+    "odpoved": "Cookies, Session storage, Local storage"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake jsou verze HTTP protokolu?",
+    "odpoved": "0.9, 1.0, 1.1, 2, 3"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake protokoly nizsi vrstvy pouzivaji jednotlive verze HTTP?",
+    "odpoved": "HTTP/0.9,1.0,1.1 - TCP | HTTP/2 - TCP | HTTP/3 - nadstavba UDP - QUIC"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jakym zpusobem prenasi data jednotlive verze HTTP?",
+    "odpoved": "HTTP/0.9 - data přenáší jako text (bez MIME) | HTTP/1.0,1.1 - data prenasi jako text ve formátu MIME | HTTP/2 - data prenasi binarne | HTTP/3 - data prenasi binarne pomoci QUIC"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi SSL a TLS?",
+    "odpoved": "SSL - starší, horší zabezpečené šifrování, nepoužívaný | TLS - novější, bezpečnější šifrování, používaný"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Z jakych casti se sklada URL?",
+    "odpoved": "https://www.spsmb.cz:3000/index.html?query=ahoj | protokol://adresa:port/dokument?query_string"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Vypiste stavove kody HTTP",
+    "odpoved": "1xx - info, 2xx - uspech, 3xx - přesměrování, 4xx - chyba klienta, 5xx - chyba serveru"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Popiste metody HTTP pro ziskavani a odesilani dat na server",
+    "odpoved": "GET - klient posle GET na server pro ziskani dat | POST - klient posle POST na server pro odeslani dat | HEAD - ziskani info z hlavicky"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jakou HTTP metodou zjistite podporovane HTTP metody?",
+    "odpoved": "OPTIONS"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Co je trasovani, jakou pouziva metodu HTTP?",
+    "odpoved": "vraci kopii req pozadavku - pro developery | TRACE"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jake soubory je potreba upravit v apache2 pro provoz http a https stranek?",
+    "odpoved": "Pro HTTP: `apache2.conf`, `security.conf`, `000-default.conf` | Pro HTTPS: `default-ssl.conf`, `ssl.conf`"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi slozkami conf, mods a sites v apache2?",
+    "odpoved": "conf - hlavni konfiguracni soubory - globalni nastaveni | mods - nastaveni pro moduly (modules) | sites - nastaveni pro jednotlive weby"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Vypiste metody HTTP",
+    "odpoved": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD, TRACE, CONNECT"
+  },
+  {
+    "okruh": "Apache",
+    "otazka": "Jaky je rozdil mezi slozkami oznacenymi jako available a enabled?",
+    "odpoved": "available - obsahuje dostupnou konfiguraci, ale není aktivní | enabled - obsahuje aktivní konfiguraci"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co je nastaveni Default document v IIS?",
+    "odpoved": "Kdyz uzivatel vyhleda např. `www.example.com/`, tak je to soubor, ktery se defaultne na teto adrese nacte. Typicky je to soubor jako `index.html`, `default.aspx` nebo `index.php`."
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co dela funkce IP and Domain Restrictions v IIS",
+    "odpoved": "Povolení nebo zablokování přístupu k webové aplikaci na základě IP adres nebo domén"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "K cemu slouzi v IIS bindings?",
+    "odpoved": "Slouží k přiřazení webové aplikaci ke konkrétní kombinaci IP adresy, portu a protokolu (např. HTTP nebo HTTPS)"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Jaká je nativní technologie pro dynamické stránky v IIS?",
+    "odpoved": "ASP.NET"
+  },
+  {
+    "okruh": "IIS",
+    "otazka": "Co dělá funkce directory browsing v IIS?",
+    "odpoved": "Umožňuje prohlížet složky na webu"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jake porty a k cemu se pouziva SMTP protokol?",
+    "odpoved": "25 (nešifrovaný) - pro přenos elektronické pošty mezi SMTP severy | 465 (starší, málo používáný, šifrovaný) a 587 (standard, nejčastěji používaný, šifrovaný) - pro odesílání elektronické pošty od klientů na SMTP server"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MDA?",
+    "odpoved": "Mail Delivery Agent - zajišťuje, aby zpráva byla doručena do e-mailové schránky uživatele"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MUA?",
+    "odpoved": "Mail User Agent - umožňuje uživateli dostat se do schránky"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to MSA?",
+    "odpoved": "Mail Submission Agent - přijímá elektronickou poštu od odesílatele (MUA) a předává je MTA"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Vypište základní protokoly a porty pro přístup k e-mailové schránce",
+    "odpoved": "POP3: 110 - nešifrovaný, 995 - šifrovaný | IMAP4: 143 - nešifrovaný, 993 - šifrovaný"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Popište rozdíl mezi dvěma základními protokoly pro přístup k e-mailové schránce",
+    "odpoved": "POP3 - stahuje celý e-mail, pokud nastala chyba, stahuje znovu; IMAP4 - stáhne pouze hlavičky, samotný e-mail si stáhne, až když ho uživatel otevře"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jaký je rozdíl mezi režimem internet a smarthost v exim4?",
+    "odpoved": "internet - doručuje emaily přes SMTP přímo na cílový server | smarthost - odesílání přes SMTP relay"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Který balíček zajišťuje podporu pro přístup k poštovní schránce?",
+    "odpoved": "Dovecot"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Jak se v SMTP přenáší obrázky?",
+    "odpoved": "Přes MIME"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to Open Relay a jaká jsou rizika?",
+    "odpoved": "Open Relay umožňuje komukoliv odkudkoliv posílat e-maily bez ověření. Spameři ho často využívají."
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to SMTP Relay?",
+    "odpoved": "funkce pro predavani posty k dalsimu SMTP serveru - bezpecnejsi"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "V jakém formátu se přes SMTP protokol přenáší data?",
+    "odpoved": "Přes text a jiný typy dat (např. obrázky, přílohy) přes MIME"
+  },
+  {
+    "okruh": "Exim4",
+    "otazka": "Co je to smarthost?",
+    "odpoved": "email se neposila primo pres internet, ale pres SMTP relay | vetsi zabezpeceni, preposila se mezi SMTP servery"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je to Exchange server?",
+    "odpoved": "Role od Microsoftu, ktera slouzi pro spravu a provoz groupwarovych sluzeb"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co to jsou groupwarove sluzby? Vyjmenujte!",
+    "odpoved": "Posilani emailu, Kalendare, Ukoly, Verejne slozky, Unified-messaging, Sdílená + vzájemná spolupráce"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je nastroj Unified Messaging?",
+    "odpoved": "spojuje ruzne typy komunikace (např. hlasové zprávy, SMS, fax) do jedne platformy"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je to MTA?",
+    "odpoved": "Mail Transfer Agent - program zajišťující přepravu elektronické pošty mezi SMTP servery"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jake MUA muzeme pouzit s Exchange serverem?",
+    "odpoved": "Outlook, Outlook Web Access - OWA, Thunderbird, Apple Mail"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaký formát databáze používá Exchange server?",
+    "odpoved": "Transakční SQL"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi room nebo equipment mailbox v MS Exchange?",
+    "odpoved": "Room mailbox - k rezervaci a správě místností (např. konferenčních místností, skolicich místnosti) v organizaci. | Equipment mailbox - k rezervaci a správě vybavení (např. projektorů, laptopů) pro schůzky nebo události."
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K cemu slouzi shared mailbox v MS Exchange?",
+    "odpoved": "aby vice uzivatelu melo pristup do jedne mailove schranky"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaky je rozdil mezi Send As a Send on Behalf v MS Exchange?",
+    "odpoved": "Send As - umožňuje uživateli odesílat e-maily jako by byl jiný uživatel, bez zmínky o původním odesílateli. | Send on Behalf - umožňuje odesílat e-maily jako zástupce jiného uživatele, přičemž v e-mailu je uvedeno, že zprávu odeslal 'on behalf of' (jako zástupce) daného uživatele."
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Co je potřeba k instalaci Exchange serveru?",
+    "odpoved": "Win server, AD, DNS, IIS"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Jaké komunikační protokoly používá Exchange server?",
+    "odpoved": "SMTP, IMAP4, POP3, MAPI"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K čemu slouží Mailbox role v Exchange serveru?",
+    "odpoved": "ke správě emailových schránek klientů"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "K čemu slouží Client Access Role v Exchange serveru?",
+    "odpoved": "k přístupu klientů k MS Exchange službám"
+  },
+  {
+    "okruh": "Exchange",
+    "otazka": "Popište limity velikosti poštovní schránky.",
+    "odpoved": "Warning limit – Upozornění, že se schránka blíží k limitu. | Prohibit send limit – Uživatel nemůže odesílat e-maily, ale může je přijímat. | Prohibit send and receive limit – Uživatel nemůže odesílat ani přijímat e-maily."
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jaky je rozdil mezi hashem a sifrou?",
+    "odpoved": "Hash - jednosměrný = data se zahashují a už je nikdo nedokáže převézt zpět na původní tvar | Šifra - obousměrný = data zašifrujeme tajným klíčem tak, aby je mohl jejich příjemce podobným způsobem znovu dešifrovat"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jak funguje symetricka sifra?",
+    "odpoved": "data se šifrují i dešifrují pomocí tajného klíče, který je předem znám oběma komunikujícím stranám"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jak funguje asymetricka sifra?",
+    "odpoved": "odesilatel a prijemce si vymeni verejne klice, odesilatel zpravu zasifruje pomoci verejneho klice prijemce, posle ji prijemci a ten si zpravu desifruje pomoci sveho privatniho klice"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jake jsou nevyhody symetricke sifry?",
+    "odpoved": "kdyz kdokoliv zjisti tajný klíč, muze pak zpravy jednoduse desifrovat a dostat se tak k datum"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jmenujte priklad asymetricke sifry",
+    "odpoved": "RSA"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jmenujte priklad hashovaci funkce",
+    "odpoved": "SHA, MD5, bcrypt"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Jake dve veci musi zajistit elektronicky podpis?",
+    "odpoved": "Autenticitu - overeni identity odesilatele (podepisujici osoby) | Integritu - ze data nebyla zmenena"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Proc se v elektronickem podpisu pouziva hash?",
+    "odpoved": "Protože umožňuje ověřit integritu dat a zajistit, že během přenosu nebo uchovávání nebyla data změněna"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Co obsahuje zprava Server Hello v TLS handshaku?",
+    "odpoved": "nahodne generovany retezec, verejnou cast certifikatu"
+  },
+  {
+    "okruh": "Zabezpecena Komunikace",
+    "otazka": "Co je potreba k vygenerovani Master Key v TLS handshaku?",
+    "odpoved": "Pre-master key, nahodne generovany retezec od klienta i serveru"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "K cemu slouzi Smart Card?",
+    "odpoved": "K autentizaci uzivatele, je zde ulozen certifikat s verejnym a privatnim klicem"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Co je potreba, abychom mohli vyuzivat funkci SSO?",
+    "odpoved": "vytvoreni vztahu duvery mezi pocitacem a AD - vznika pripojenim PC k domene AD"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "K cemu slouzi funkce Windows Vault?",
+    "odpoved": "Kdyz nejde pouzit integrovane overeni v AD (SSO) | Windows Vault - uloziste prihlasovacich udaju"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Proti jakemu typu utoku je odolny prihlasovaci protokol Kerberos?",
+    "odpoved": "proti odposlouchavacim utokum"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Pomoci ceho probiha overovani uzivatelu v protokolu Kerberos?",
+    "odpoved": "TGT, klient/server ticket"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Z jakych casti se sklada prihlasovaci protokol Kerberos?",
+    "odpoved": "AS (Authentication Server), TGS (Ticket Granting Server), KDC (Key Distribution Center), SS (Service Server), Klient"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Ktera cast protokolu Kerberos slouzi pro vydavani ticketu?",
+    "odpoved": "KDC se skládá ze dvou částí: AS a TGS"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Proc se pri overovani v protokolu Kerberos neposila po siti heslo?",
+    "odpoved": "misto hesla se autentizuje pomoci sifrovanych ticketu (TGT, klient/server ticket)"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Jake klice protokolu Kerberos sifruji komunikaci mezi klientem a serverem?",
+    "odpoved": "klient/TGS session key | klient/server session key | secret key, pomoci ktereho je sifrovan TGT nebo klient/server ticket"
+  },
+  {
+    "okruh": "Autentifikace AD",
+    "otazka": "Co je to autentikator v protokolu Kerberos? Jake obsahuje udaje?",
+    "odpoved": "slouzi k overeni klienta | obsahuje User ID a casove znacky"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Podle čeho vybírá RIP cesty v síti?",
+    "odpoved": "Podle počtu hopů (skoků)"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaký má RIP čas konvergence?",
+    "odpoved": "pomalou konvergenci"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Do jaké skupiny RP (routovacích protokolů) patří RIP?",
+    "odpoved": "Distance-vector"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaké jsou nevýhody RIP protokolu?",
+    "odpoved": "neškáluje dobře (pro menší sítě), nejkratší cesta (podle počtu hopů), pomalejší ve většině případech, pomalá konvergence"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Vypište RIP timery s krátkým popisem",
+    "odpoved": "Update timer - router odesílá pravidelnou aktualizaci směrovacích tabulek ostatním směrovačům (každých 30 sekund +- sekund, aby se nezahlcovala síť) ||| Invalid timer - pokud nějaký router přestane posílat update timer, tak nastane invalid timer a nastaví se metrika na 16 (180 sekund) ||| Flush timer - vymaže cestu z routovacích tabulek (180 + 60 - sám 60 sekund) ||| Holddown timer - když z jiného routeru selže trasa, tak začne čekat, dokud od sousedního routeru příjde lepší metrika. Pokud příjde, aktualzije si svoji routovací tabulku. Pokud jsou ty metriky horší, tak si ponechá původní routovací tabulku"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Kolik maximálně routerů může být v síti s RIP routery?",
+    "odpoved": "15 routerů"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Co říká pravidlo Split horizon?",
+    "odpoved": "Router neposílá informace o trase zpět na rozhraní, odkud ji získal"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Jaký je rozdíl mezi dvoubodovou a tříbodovou smyčkou (můžete nakreslit)?",
+    "odpoved": "Dvoubodová smyčka = smyčka, ve které se nacházají dva routery. Mezi sebou si přehazují paket a každý si myslí, že přes toho druhého to je efektivnější a tím pádem to jde do smyčky ||| Tříbodová smyčka = smyčka, ve které se nacházejí tři routery a každý si myslí, že přes jeho souseda to vede do cílové adresy a každý si to myslí o tom druhém a takhle to jde zase do smyčky"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Co označuje v RIP metrika 16?",
+    "odpoved": "nedosažitelnou síť"
+  },
+  {
+    "okruh": "RIP",
+    "otazka": "Na jakou adresu posílá RIPv2 routovací informace",
+    "odpoved": "Na multicastovou IP adresu 224.0.0.9"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vysvětlete, k čemu slouží v transport layer multiplexování.",
+    "odpoved": "Slouží k tomu, aby více aplikačních procesů mohlo současně využívat jedno síťové spojení."
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Popište rozdělení portů u transport layer.",
+    "odpoved": "0–1023 = privilegované porty | 1024–49151 = registrované porty, 49152–65535 = privátní porty"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Jaké typy portů se v transport layer používají pro odchozí spojení?",
+    "odpoved": "Privátní porty (49152–65535)"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Co znamená výraz stavový a nestavový protokol?",
+    "odpoved": "Stavový protokol uchovává informace o stavu spojení (např. TCP) | Nestavový neuchovává informace o stavu spojení (např. UDP)"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Jaké jsou vlastnosti protokolu TCP?",
+    "odpoved": "Stavový, spojovaný a spolehlivý"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vyjmenujte položky záhlaví TCP segmentu.",
+    "odpoved": "zdrojový port, cílový port, pořadové číslo odesílaného bajtu, pořadové číslo přijímaného bajtu, délka hlavičky, rezerva, příznaky, délka okna, kontrolní součet, ukazatel naléhavých data, výplň, data"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Vyjmenujte položky záhlaví UDP datagramu.",
+    "odpoved": "zdrojový port, cílový port, délka, kontrolní součet"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Nakreslete proces navázání a ukončení spojení u TCP protokolu.",
+    "odpoved": "Navázání: SYN ➡ SYN,ACK ➡ ACK | Ukončení: FIN ➡ FIN,ACK ➡ ACK"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Popište příznaky používané v TCP segmentech.",
+    "odpoved": "SYN = navázání spojení | ACK = potvrzení spojení | URG = naléhavá (urgentní) data | RST = okamžité ukončení spojení | FIN = žádost o ukončení spojení"
+  },
+  {
+    "okruh": "Transportní vrstva",
+    "otazka": "Se kterými vrstvami ISO/OSI sousedí transport layer?",
+    "odpoved": "Síťová a relační (Network a Session)"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaký je rozdíl mezi autorizací a autentizací uživatele?",
+    "odpoved": "Autentizace = kontrola, zda se přihlašuje správný uživatel | Autorizace = kontrola, zda má uživatel přístup k danému zdroji."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jak funguje symetrická šifra?",
+    "odpoved": "Obě strany komunikace mají jeden společný (tajný) klíč, pomocí kterého šifrují a dešifrují zprávy."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké jsou výhody asymetrické šifry?",
+    "odpoved": "Veřejný klíč může klient sdílet s kýmkoli a nikdo se stejně nedostane k datům – soukromý klíč má jen klient."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké jsou nevýhody asymetrické šifry? (stačí 2)",
+    "odpoved": "pomalejší, náročnější na výpočetní výkon a vyžaduje správu dvojic klíčů"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jmenujte příklad symetrické šifry.",
+    "odpoved": "AES"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jmenujte příklad hashovací funkce. (stačí 1)",
+    "odpoved": "MD5, SHA-256, bcrypt"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jaké dvě věci musí zajistit elektronický podpis?",
+    "odpoved": "Ověření identity odesílatele a zajištění integrity dat (že data nebyla po cestě změněna)."
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Jakým klíčem se šifruje hash v elektronickém podpisu?",
+    "odpoved": "Soukromým klíčem odesílatele"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Co obsahuje zpráva Server Hello v TLS handshaku?",
+    "odpoved": "náhodně generovaný řetězec a veřejnou část certifikátu"
+  },
+  {
+    "okruh": "Zabezpečení dat",
+    "otazka": "Co je potřeba k vygenerování Master Key v TLS handshaku?",
+    "odpoved": "Pre-master key, náhodně generované řetězce od klienta i serveru"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jaké prvky patří do strukturované kabeláže?",
+    "odpoved": "patch panely, patch kabely, horizontální kabely, telekomunikační zásuvky, data rack"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jakými zásadami se řídíme při návrhu strukturované kabeláže? (z odpovědí si jich jenom vyber pár)",
+    "odpoved": "předem definované požadavky (počet uživatelů, jejich umíštění atd.) | ethernetový kabel nesmí být delší než 100 metrů a nesmí být víckrát jak 2x ohnutý | dodržování standardů a norem | správný výběr kabelů a komponent | správné umíštění zařízení | správné rozložení kabelů | budoucí škálovatelnost"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Vypište typy provedení TP kabelů s krátkým popisem.",
+    "odpoved": "UTP - nestíněný, pouze s páry v plastovém plášti | FTP - celý kabel stíněný fólií, jednotlivé páry nestíněné | STP - každý pár samostatně stíněný fólií + celý kabel opletený"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Co říká o TP kabelu náhradní schéma?",
+    "odpoved": "Říká, jak se v realitě chová a ukazuje vlastnosti kabelu."
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Která kategorie splňuje tyto požadavky: šířka pásma 100 MHz, rychlost 1 Gb/s?",
+    "odpoved": "5e"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Vypište typy optických vlákien.",
+    "odpoved": "jednovidové (single mode), mnohovidové (multimode)"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Z jakých částí se skládá optické vlákno?",
+    "odpoved": "jádro, plášť a obal"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jak se šíří signál v optickém vlákně (Snellův zákon)?",
+    "odpoved": "pomocí úplného odrazu"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Jakými způsoby můžeme spojovat nebo zakončovat optická vlákna?",
+    "odpoved": "Sváření (fúze), konektor, mechanické spojování, lepení"
+  },
+  {
+    "okruh": "Strukturovaná kabeláž",
+    "otazka": "Který ze způsobů zakončení optických vlákien přináší nejvíce výhod?",
+    "odpoved": "sváření (fúze)"
   }
 ]
+
